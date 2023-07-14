@@ -10,3 +10,7 @@ class LessonAdmin(SummernoteModelAdmin):
                     'booking_status')
     search_fields = ('user', 'lesson_date', 'booking_status')
     list_filter = ('user', 'lesson_date', 'booking_status')
+    actions = ['approve_lesson']
+
+    def approve_lesson(self, request, queryset):
+        queryset.update(approved=True)

@@ -8,7 +8,8 @@ BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
 
 
 class LessonBooking(models.Model):
-    booking_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    booking_id = models.UUIDField(primary_key=True, default=uuid.uuid4,
+                                  editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE,
                              related_name="user_booking")
     updated_on = models.DateField(auto_now_add=True)
