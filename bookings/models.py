@@ -1,13 +1,14 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator
+import uuid
 
 
 BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
 
 
 class LessonBooking(models.Model):
-    booking_id = models.CharField(max_length=200, unique=True)
+    booking_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE,
                              related_name="user_booking")
     updated_on = models.DateField(auto_now_add=True)
@@ -34,4 +35,4 @@ class LessonBooking(models.Model):
         ordering = ["-lesson_date"]
 
     def __str__(self):
-        return self.booking_id
+        return str(self.booking_id)
