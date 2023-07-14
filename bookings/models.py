@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
+from django.core.validators import MaxValueValidator
 
 
 BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
