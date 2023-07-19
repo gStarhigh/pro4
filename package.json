@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "fullcalendar": "^6.1.8"
+    "@fullcalendar/core": "^6.1.8"
   }
 }
