@@ -7,14 +7,14 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container login-cont">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
       <h1 class="login-title text center">{% trans "Log In" %}</h1>
       <hr class="home-break">
       <br>
-      <p>Don't have an account?<a href="{{ signup_url }}">Sign up</a></p>
-
+      <p class="text-center">Don't have an account?<a href="{{ signup_url }}">
+          <span class="sign-up">Sign up!</span></a></p>
       <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}

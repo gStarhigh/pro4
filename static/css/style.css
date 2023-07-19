@@ -48,6 +48,73 @@ a {
     height: auto;
 }
 
-/* Account pages */
 
-/* Log in */
+/* Login page */
+
+.login-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2D93AD;
+}
+
+.home-break {
+    width: 120px;
+    border: 2px solid #2D93AD;
+    margin: 0 auto;
+}
+
+.login p {
+    text-align: center;
+}
+
+.login a {
+    color: #2D93AD;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+.login label {
+    color: #666;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.primaryAction {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #2D93AD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primaryAction:hover {
+    background-color: #28859c;
+}
