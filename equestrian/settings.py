@@ -79,6 +79,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'equestrian.wsgi.application'
 
+# Account settings
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
