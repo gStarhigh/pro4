@@ -22,5 +22,6 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
     path('', views.Home.as_view(), name='Home'),
     path('login/', views.LoginView.as_view(), name='login'),
-    path('create_account/', views.CreateAccountView.as_view(), name='create_account'),
+    path('create_account/', views.CreateAccountView.as_view(),
+         name='create_account'),
 ]
