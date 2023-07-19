@@ -51,13 +51,13 @@
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="{% url 'create_account' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="{% url 'login' %}">Login</a>
                     </li>
                     {% endif %}
-                    <li class="nav-item">
+                    <li class=" nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
