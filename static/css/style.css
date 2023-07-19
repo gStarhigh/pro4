@@ -5,9 +5,7 @@ body,
 html {
     padding: 0;
     margin: 0;
-    /*Fallback Background color incase a browser does not support gradient*/
-    background-color: rgba(182, 182, 149, 0.692);
-    background-image: linear-gradient(rgb(180, 180, 180), whitesmoke, rgb(180, 180, 180));
+    background-color: #88ab75;
     min-height: 100%;
     max-width: 100vw;
 }
@@ -19,6 +17,7 @@ h3,
 p,
 a {
     font-family: 'Roboto', sans-serif;
+    color: #3c153b;
 }
 
 .btn a {
@@ -27,9 +26,11 @@ a {
 }
 
 .nav,
+.navbar,
 .nav-link {
-    color: black;
+    color: #3c153b;
 }
+
 
 
 .lesson-card {
@@ -46,3 +47,7 @@ a {
     max-width: 100%;
     height: auto;
 }
+
+/* Account pages */
+
+/* Log in */

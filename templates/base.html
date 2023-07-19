@@ -25,7 +25,7 @@
     </div>
     {% endif %}
     <!--Header-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand navbar-text" href="#">Starhögs Equestrian</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -80,31 +80,31 @@
     <footer class="py-3 my4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Home</a>
+                <a href="#" class="nav-link px-2">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">About</a>
+                <a href="#" class="nav-link px-2">About</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Contact</a>
+                <a href="#" class="nav-link px-2">Contact</a>
             </li>
             {% if user.is_authenticated %}
             <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">My Bookings</a>
+                <a href="#" class="nav-link px-2">My Bookings</a>
             </li>
             <li class="nav-item">
-                <a href="{% url 'account_logout' %}" class="nav-link px-2 text-muted">Log out</a>
+                <a href="{% url 'account_logout' %}" class="nav-link px-2">Log out</a>
             </li>
             {% else %}
             <li class="nav-item">
-                <a href="{% url 'account_signup' %}" class="nav-link px-2 text-muted">Register</a>
+                <a href="{% url 'account_signup' %}" class="nav-link px-2">Register</a>
             </li>
             <li class="nav-item">
-                <a href="{% url 'account_login' %}" class="nav-link px-2 text-muted">Log in</a>
+                <a href="{% url 'account_login' %}" class="nav-link px-2">Log in</a>
             </li>
             {% endif %}
         </ul>
-        <p class="text-center text-muted">© 2023 Starhögs Equestrian</p>
+        <p class="text-center">© 2023 Starhögs Equestrian</p>
     </footer>
 
     <!--Scripts will go here-->
