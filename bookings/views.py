@@ -24,3 +24,22 @@ class LessonBooking(View):
             return redirect('my_bookings')
 
         return render(request, self.template_name, {'form': form})
+
+
+class CalendarView(View):
+    def get(self, request):
+        # Get the booking data from the database
+        bookings = LessonBooking.objects.all()
+
+        # Create a list of the bookings
+        events = []
+        for booking in bookings:
+            event = {
+                'title': booking.user.username,
+                'start': booking.lesson_date.isoformat(),
+                'end': booking.lesson_date.isoformat(),
+                'color': 'green' if booking.booking_status == 1 else 'red',
+            }
+            events.append(event)
+
+        return JsonResponse(events, safe=False)
