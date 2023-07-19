@@ -17,7 +17,34 @@
             <div class="card-body">
                 <h5 class="card-title">Book your riding lesson today!</h5>
                 <p class="card-text">Do you want to improve? Look no further!</p>
+                {% if user.is_authenticated %}
+                <!-- Button trigger modal -->
                 <a href="#" class="btn btn-primary">Book now!</a>
+                {% else %}
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <a href="#">Book now!</a>
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Please login!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                You must be logged in to create a booking. Please create your account and log in to
+                                proceed.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"><a href="#">Login!</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>

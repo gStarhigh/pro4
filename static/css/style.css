@@ -21,6 +21,11 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+.btn a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 .nav,
 .nav-link {
     color: black;
