@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
