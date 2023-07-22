@@ -1,6 +1,10 @@
 /*Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+:root {
+    --nav-color: #99c084;
+}
+
 body,
 html {
     padding: 0;
@@ -27,8 +31,10 @@ a {
 
 .nav,
 .navbar,
-.nav-link {
+.nav-link,
+.footer-container {
     color: #3c153b;
+    background-color: var(--nav-color);
 }
 
 .lesson-card {
