@@ -26,7 +26,7 @@ class CreateLessonBooking(View):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
-            return redirect('Home')
+            return redirect('my_bookings')
 
         return render(request, self.template_name, {'form': form})
 

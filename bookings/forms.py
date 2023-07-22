@@ -43,14 +43,17 @@ class LessonBookingForm(forms.ModelForm):
                 lesson_date=booking_datetime
             )
 
-            total_participants = existing_bookings.aggregate(Sum('no_participants')).get('no_participants__sum', 0)
+            total_participants = existing_bookings.aggregate(
+                Sum('no_participants')).get('no_participants__sum', 0)
+
             if total_participants is None:
                 total_participants = 0
 
             available_slots = 3 - total_participants
 
             if available_slots < no_participants:
-                raise forms.ValidationError("Booking is full for the selected date and time.")
+                raise forms.ValidationError("Booking is full for the "
+                                            "selected date and time.")
         return cleaned_data
 
 
