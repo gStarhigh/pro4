@@ -1,5 +1,6 @@
 from django.core.exceptions import ValidationError
 from django.utils import timezone
+from datetime import time
 
 
 def validate_booking_date(value):
@@ -9,7 +10,7 @@ def validate_booking_date(value):
     """
     if value.weekday() > 4:  # Monday = 0, Friday = 4
         raise ValidationError("Bookings are only allowed"
-                              "on Mondays to Fridays.")
+                              " on Mondays to Fridays.")
     if value < timezone.now().date():
         raise ValidationError("Booking date cannot be in the past.")
 
