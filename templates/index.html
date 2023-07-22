@@ -19,9 +19,13 @@
                 <p class="card-text">Do you want to improve? Look no further!</p>
                 {% if user.is_authenticated %}
                 <!-- Button trigger modal -->
-                <a href="#" class="btn btn-success">Book now!</a>
+                <button type="button" class="btn card-btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <a href="{% url 'CreateLessonBooking' %}">Book now!</a>
+                </button>
                 {% else %}
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn card-btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     <a href="#">Book now!</a>
                 </button>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -39,7 +43,8 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary"><a href="#">Login!</a></button>
+                                <button type="button" class="btn btn-primary"><a
+                                        href="{% url 'account_login' %}">Login!</a></button>
                             </div>
                         </div>
                     </div>
