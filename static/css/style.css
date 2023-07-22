@@ -31,8 +31,6 @@ a {
     color: #3c153b;
 }
 
-
-
 .lesson-card {
     margin-top: 80px;
 }
@@ -158,14 +156,7 @@ a {
     border: 5px;
 }
 
-/* Calendar */
-
-#calendar {
-    width: 80vw;
-    height: 80vh;
-    margin: 0 auto;
-}
-
+/* My bookings page */
 
 .booking-cards {
     display: flex;
@@ -189,4 +180,25 @@ a {
 .booking-focus {
     font-size: 14px;
     color: #555;
+}
+
+
+/* Footer */
+
+.social-links {
+    text-align: center;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links i {
+    font-size: 150%;
+    padding: 0 20px;
+}
+
+.social-links i:hover {
+    font-size: 180%;
 }
