@@ -8,7 +8,12 @@
     {% for booking in user_bookings %}
     <div class="booking-card">
         <p class="booking-info">{{ booking.lesson_date|date:"j F Y" }} kl. {{ booking.lesson_time|time:"H:i" }}</p>
-        <p class="booking-focus">{{ booking.focus_lesson }}</p>
+        <p class="booking-focus">Number of participants: {{ booking.no_participants }}</p>
+        <p class="booking-focus">Booking date: {{ booking.created_on }}</p>
+        <p class="booking-focus">Updated date: {{ booking.updated_on }}</p>
+        <p class="booking-focus">Focus for the lesson: {{ booking.focus_lesson }}</p>
+        <button type="button" href:="#" class="btn btn-danger btn-signup btn-sm">Delete Booking</button>
+        <button type="button" href:="#" class="btn btn-success btn-signup btn-sm">Update Booking</button>
     </div>
     {% endfor %}
 </div>
