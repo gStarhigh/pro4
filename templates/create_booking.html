@@ -14,7 +14,8 @@
             <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                <input type="reset" class="btn btn-danger btn-lg" value="Reset">
+                <button type="submit" class="btn btn-success btn-signup btn-lg">Confirm Booking</button>
             </form>
             {% endif %}
         </div>
