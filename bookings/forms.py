@@ -19,6 +19,9 @@ class LessonBookingForm(forms.ModelForm):
                                                   .strftime('%Y-%m-%d')}),
             'lesson_time': forms.TimeInput(attrs={'type': 'time'}),
         }
+        labels = {
+            'focus_lesson': 'Enter the focus for your lesson:'
+        }
 
     def clean_lesson_date(self):
         lesson_date = self.cleaned_data['lesson_date']
