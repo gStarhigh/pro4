@@ -190,6 +190,24 @@ a {
     resize: vertical;
 }
 
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px;
+}
+
+
 /* Delete page*/
 .delete-cont {
     display: flex;

@@ -8,6 +8,8 @@ from django.db.models import Sum
 
 
 class LessonBookingForm(forms.ModelForm):
+    NO_PARTICIPANTS_CHOICES = [(i, str(i)) for i in range(1, 4)]
+
     class Meta:
         model = LessonBooking
         fields = ['focus_lesson', 'lesson_date', 'lesson_time',
@@ -22,6 +24,8 @@ class LessonBookingForm(forms.ModelForm):
         labels = {
             'focus_lesson': 'Enter the focus for your lesson:'
         }
+    no_participants = forms.ChoiceField(choices=NO_PARTICIPANTS_CHOICES,
+                                        widget=forms.Select)
 
     def clean_lesson_date(self):
         lesson_date = self.cleaned_data['lesson_date']
