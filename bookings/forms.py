@@ -4,7 +4,6 @@ from django.core.validators import MaxValueValidator
 from django.utils import timezone
 from .validation import validate_booking_date, validate_booking_time
 from datetime import time
-from django.db.models import Sum
 
 
 class LessonBookingForm(forms.ModelForm):
@@ -13,7 +12,9 @@ class LessonBookingForm(forms.ModelForm):
         fields = ['focus_lesson', 'lesson_date', 'lesson_time',
                   'terms_checked', 'no_participants', 'level_ekipage']
         widgets = {
-            'lesson_date': forms.DateInput(attrs={'type': 'date'}),
+            'lesson_date': forms.DateInput(attrs={'type': 'date', 'min':
+                                                  timezone.now()
+                                                  .strftime('%Y-%m-%d')}),
             'lesson_time': forms.TimeInput(attrs={'type': 'time'}),
         }
 
@@ -37,10 +38,14 @@ class LessonBookingForm(forms.ModelForm):
             booking_datetime = timezone.make_aware(
                 timezone.datetime.combine(lesson_date, lesson_time)
             )
-            existing_bookings = LessonBooking.objects.filter(lesson_date=booking_datetime)
-            total_participants = existing_bookings.aggregate(Sum('no_participants'))['no_participants__sum'] or 0
+            existing_bookings = LessonBooking.objects.filter(
+                lesson_date=booking_datetime)
+
+            total_participants = existing_bookings.aggregate
+            (Sum('no_participants'))['no_participants__sum'] or 0
             available_slots = 3 - total_participants
 
             if available_slots < no_participants:
-                raise forms.ValidationError("Booking is full for the selected date and time.")
+                raise forms.ValidationError("Booking is full for the"
+                                            " selected date and time.")
         return cleaned_data
