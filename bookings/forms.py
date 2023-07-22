@@ -11,8 +11,9 @@ class LessonBookingForm(forms.ModelForm):
     class Meta:
         model = LessonBooking
         fields = ['focus_lesson', 'lesson_date', 'lesson_time',
-                  'terms_checked', 'no_participants', 'level_ekipage']
+                  'no_participants', 'level_ekipage', 'terms_checked']
         widgets = {
+            'focus_lesson': forms.Textarea(attrs={'cols': 30, 'rows': 10}),
             'lesson_date': forms.DateInput(attrs={'type': 'date', 'min':
                                                   timezone.now()
                                                   .strftime('%Y-%m-%d')}),

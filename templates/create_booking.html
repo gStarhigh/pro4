@@ -6,19 +6,25 @@
 
 {% block content %}
 <main>
-    <div class="col-md-4 card mb-4 mt-3">
-        <div class="card-body">
-            {% if user.is_authenticated %}
-            <h3>Book your lesson here</h3>
-            <p>Username: {{ user.username }}</p>
-            <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <input type="reset" class="btn btn-danger btn-lg" value="Reset">
-                <button type="submit" class="btn btn-success btn-signup btn-lg">Confirm Booking</button>
-            </form>
-            {% endif %}
+    <div class="container booking-cont">
+        <div class="card mb-4 mt-3">
+            <div class="card-body">
+                {% if user.is_authenticated %}
+                <h3 class="login-title">Book your lesson here</h3>
+                <hr class="home-break">
+                <br>
+                <p>Username: {{ user.username }}</p>
+                <form method="post">
+                    <div class="form-group">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type="reset" class="btn btn-danger btn-lg" value="Reset">
+                        <button type="submit" class="btn btn-success btn-signup btn-lg">Confirm Booking</button>
+                </form>
+                {% endif %}
+            </div>
         </div>
+    </div>
     </div>
 </main>
 {% endblock %}
