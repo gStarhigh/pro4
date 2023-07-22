@@ -11,6 +11,7 @@ class Home(generic.TemplateView):
 
 
 class CreateLessonBooking(View):
+    """ This view is used to display the booking page """
     template_name = 'create_booking.html'
 
     def get(self, request):
@@ -29,6 +30,7 @@ class CreateLessonBooking(View):
 
 
 class MyBookings(LoginRequiredMixin, generic.ListView):
+    """ This view is used to display the users booked lessons """
     template_name = 'my_bookings.html'
     model = LessonBooking
 
