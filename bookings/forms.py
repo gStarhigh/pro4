@@ -50,3 +50,10 @@ class LessonBookingForm(forms.ModelForm):
                 raise forms.ValidationError("Booking is full for the"
                                             " selected date and time.")
         return cleaned_data
+
+
+class DeleteBooking(forms.Form):
+    confirmation = forms.BooleanField(
+        required=True,
+        widget=forms.HiddenInput(attrs={"value": True})
+    )

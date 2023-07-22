@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Delete Booking</h2>
+<p>Are you sure you want to delete the booking?</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="confirmation" value="True">
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="{% url 'my_bookings' %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}

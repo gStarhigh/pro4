@@ -25,4 +25,7 @@ urlpatterns = [
     path('book_lesson/', views.CreateLessonBooking.as_view(),
          name='CreateLessonBooking'),
     path('my_bookings/', views.MyBookings.as_view(), name='my_bookings'),
+    path('delete_booking/<uuid:booking_id>/', views.DeleteBooking.as_view(),
+         name='delete_booking'),
+
 ]

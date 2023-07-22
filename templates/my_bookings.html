@@ -12,7 +12,8 @@
         <p class="booking-focus">Booking date: {{ booking.created_on }}</p>
         <p class="booking-focus">Updated date: {{ booking.updated_on }}</p>
         <p class="booking-focus">Focus for the lesson: {{ booking.focus_lesson }}</p>
-        <button type="button" href:="#" class="btn btn-danger btn-signup btn-sm">Delete Booking</button>
+        <a href="{% url 'delete_booking' booking.booking_id %}" class="btn btn-danger btn-signup btn-sm">Delete
+            Booking</a>
         <button type="button" href:="#" class="btn btn-success btn-signup btn-sm">Update Booking</button>
     </div>
     {% endfor %}

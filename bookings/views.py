@@ -1,8 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from .forms import LessonBookingForm
 from .models import LessonBooking
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import JsonResponse
+from django.urls import reverse
 
 
 class Home(generic.TemplateView):
@@ -41,3 +43,25 @@ class MyBookings(LoginRequiredMixin, generic.ListView):
         context = super().get_context_data(**kwargs)
         context['user_bookings'] = context['object_list']
         return context
+
+
+class DeleteBooking(View):
+    """
+    This view is used to confirm the deletion of a booking or throw an error.
+    """
+    template_name = 'delete_booking.html'
+
+    def get(self, request, booking_id):
+        booking = get_object_or_404(LessonBooking, booking_id=booking_id,
+                                    user=request.user)
+        return render(request, self.template_name, {'booking': booking})
+
+    def post(self, request, booking_id):
+        booking = get_object_or_404(LessonBooking, booking_id=booking_id,
+                                    user=request.user)
+        if 'confirmation' in request.POST:
+            booking.delete()
+            return redirect('my_bookings')
+        else:
+            return JsonResponse({'status': 'error', 'message':
+                                 'Booking not deleted.'})
