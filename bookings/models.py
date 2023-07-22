@@ -34,7 +34,7 @@ class LessonBooking(models.Model):
     booking_status = models.IntegerField(choices=BOOKING_STATUS, default=0)
 
     class Meta:
-        ordering = ["-lesson_date"]
+        ordering = ["lesson_date"]
 
     def __str__(self):
         return str(self.booking_id)

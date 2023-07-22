@@ -4,6 +4,7 @@ from django.core.validators import MaxValueValidator
 from django.utils import timezone
 from .validation import validate_booking_date, validate_booking_time
 from datetime import time
+from django.db.models import Sum
 
 
 class LessonBookingForm(forms.ModelForm):

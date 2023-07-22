@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<h2>My Bookings</h2>
+{% if user_bookings %}
+<div class="booking-cards">
+    {% for booking in user_bookings %}
+    <div class="booking-card">
+        <p class="booking-info">{{ booking.lesson_date|date:"j F Y" }} kl. {{ booking.lesson_time|time:"H:i" }}</p>
+        <p class="booking-focus">{{ booking.focus_lesson }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p>You have no bookings yet.</p>
+{% endif %}
+{% endif %}
+{% endblock %}

@@ -22,5 +22,7 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
     path('', views.Home.as_view(), name='Home'),
     path('accounts/', include('allauth.urls')),
-    path('book_lesson/', views.LessonBooking.as_view(), name='LessonBooking'),
+    path('book_lesson/', views.CreateLessonBooking.as_view(),
+         name='CreateLessonBooking'),
+    path('my_bookings/', views.MyBookings.as_view(), name='my_bookings'),
 ]
