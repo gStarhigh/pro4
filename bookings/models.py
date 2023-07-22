@@ -15,7 +15,8 @@ class LessonBooking(models.Model):
     updated_on = models.DateField(auto_now_add=True)
     created_on = models.DateField(auto_now_add=True)
     focus_lesson = models.TextField()
-    lesson_date = models.DateTimeField(auto_now=False)
+    lesson_date = models.DateField(auto_now=False)
+    lesson_time = models.TimeField(default="18:00")
     terms_checked = models.BooleanField(default=False)
     no_participants = models.PositiveIntegerField(default=1,
                                                   validators=[MaxValueValidator
