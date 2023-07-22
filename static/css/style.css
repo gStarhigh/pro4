@@ -170,20 +170,11 @@ a {
 
 /* My bookings page */
 
-.booking-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.booking-cont {
+    margin-bottom: 50px;
 }
 
-.booking-card {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 10px;
-    width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
+.booking-cards,
 .booking-info {
     font-size: 16px;
     margin-bottom: 8px;
