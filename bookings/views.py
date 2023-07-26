@@ -6,6 +6,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
 from django.urls import reverse
 from django.utils import timezone
+from django.contrib import messages
 
 
 class Home(generic.TemplateView):
@@ -27,6 +28,7 @@ class CreateLessonBooking(View):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
+            messages.info(request, 'Your lesson was booked successfully!')
             return redirect('my_bookings')
 
         return render(request, self.template_name, {'form': form})
@@ -64,6 +66,7 @@ class DeleteBooking(View):
                                     user=request.user)
         if 'confirmation' in request.POST:
             booking.delete()
+            messages.error(request, 'Your lesson was successfully deleted!')
             return redirect('my_bookings')
         else:
             return JsonResponse({'status': 'error', 'message':
@@ -91,6 +94,7 @@ class UpdateBooking(View):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
+            messages.info(request, 'Your lesson was updated successfully!')
             return redirect('my_bookings')
         return render(request, self.template_name,
                       {'form': form, 'booking': booking})
