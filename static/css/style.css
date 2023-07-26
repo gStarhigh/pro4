@@ -175,6 +175,10 @@ a {
 
 /* My bookings page */
 
+.booking-title {
+    margin-top: 40px;
+}
+
 .booking-cont {
     margin-bottom: 50px;
 }
