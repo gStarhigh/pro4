@@ -21,7 +21,8 @@
                     <a href="{% url 'delete_booking' booking.booking_id %}"
                         class="btn btn-danger btn-signup btn-sm">Delete
                         Booking</a>
-                    <button type="button" href:="#" class="btn btn-success btn-signup btn-sm">Update Booking</button>
+                    <button type="button" href:="{% url 'update_booking' booking.id %}"
+                        class="btn btn-success btn-signup btn-sm">Update Booking</button>
                 </div>
             </div>
         </div>
