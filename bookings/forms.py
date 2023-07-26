@@ -2,7 +2,8 @@ from django import forms
 from .models import LessonBooking
 from django.core.validators import MaxValueValidator
 from django.utils import timezone
-from .validation import validate_booking_date, validate_booking_time
+from .validation import (validate_booking_date, validate_booking_time,
+                         validate_booking_deletion)
 from datetime import time
 from django.db.models import Sum
 
@@ -72,6 +73,22 @@ class DeleteBooking(forms.Form):
         required=True,
         widget=forms.HiddenInput(attrs={"value": True})
     )
+
+    def clean(self):
+        cleaned_data = super().clean()
+        confirmation = cleaned_data.get('confirmation')
+
+        if confirmation:
+            booking_id = self.instance
+            try:
+                booking = LessonBooking.objects.get(pk=booking_id)
+                validate_booking_deletion(booking)
+            except LessonBooking.DoesNotExist:
+                raise forms.ValidationError("Booking not found.")
+        else:
+            raise forms.ValidationError("You must confirm the deletion.")
+
+        return cleaned_data
 
 
 class UpdateLessonBookingForm(forms.ModelForm):

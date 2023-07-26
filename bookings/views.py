@@ -1,12 +1,14 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
-from .forms import LessonBookingForm, UpdateLessonBookingForm
+from .forms import LessonBookingForm, UpdateLessonBookingForm, DeleteBooking
 from .models import LessonBooking
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
 from django.urls import reverse
 from django.utils import timezone
 from django.contrib import messages
+from .validation import validate_booking_deletion
+from django.core.exceptions import ValidationError
 
 
 class Home(generic.TemplateView):
@@ -64,13 +66,20 @@ class DeleteBooking(View):
     def post(self, request, booking_id):
         booking = get_object_or_404(LessonBooking, booking_id=booking_id,
                                     user=request.user)
+
         if 'confirmation' in request.POST:
-            booking.delete()
-            messages.error(request, 'Your lesson was successfully deleted!')
-            return redirect('my_bookings')
+            try:
+                validate_booking_deletion(booking)
+                booking.delete()
+                messages.success(request, 'Your lesson was successfully'
+                                          ' deleted!')
+                return redirect('my_bookings')
+            except ValidationError as e:
+                messages.error(request, e.message)
+                return redirect('my_bookings')
         else:
-            return JsonResponse({'status': 'error', 'message':
-                                 'Booking not deleted.'})
+            messages.error(request, 'Booking not deleted.')
+            return redirect('my_bookings')
 
 
 class UpdateBooking(View):
