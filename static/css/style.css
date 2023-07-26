@@ -80,6 +80,7 @@ a {
 }
 
 .login-title {
+    margin-top: 30px;
     text-align: center;
     font-size: 28px;
     font-weight: bold;
