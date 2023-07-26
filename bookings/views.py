@@ -65,3 +65,29 @@ class DeleteBooking(View):
         else:
             return JsonResponse({'status': 'error', 'message':
                                  'Booking not deleted.'})
+
+
+class UpdateBooking(View):
+    """
+    This view is used to update the booking of a lesson.
+    """
+    template_name = 'update_booking.html'
+
+    def get(self, request, booking_id):
+        booking = get_object_or_404(LessonBooking, id=booking_id,
+                                    user=request.user)
+        form = LessonBookingForm(instance=booking)
+        return render(request, self.template_name,
+                      {'form': form, 'booking': booking})
+
+    def post(self, request, booking_id):
+        booking = get_object_or_404(LessonBooking, id=booking_id,
+                                    user=request.user)
+        form = LessonBookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            booking = form.save(commit=False)
+            booking.user = request.user
+            booking.save()
+            return redirect('my_bookings')
+        return render(request, self.template_name,
+                      {'form': form, 'booking': booking})
