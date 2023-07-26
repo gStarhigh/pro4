@@ -13,4 +13,4 @@ class LessonAdmin(SummernoteModelAdmin):
     actions = ['approve_lesson']
 
     def approve_lesson(self, request, queryset):
-        queryset.update(approved=True)
+        queryset.update(booking_status=1)
