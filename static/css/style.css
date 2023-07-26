@@ -29,6 +29,11 @@ a {
     text-decoration: none;
 }
 
+/* Messages */
+#messages {
+    margin-top: 10px;
+}
+
 .nav,
 .navbar,
 .nav-link,

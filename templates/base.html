@@ -74,9 +74,10 @@
     <!-- Information messages for the user when performing an action-->
     <div class="container">
         <div class="row">
-            <div class="cold-md-8 offset-md-2">
+            <div>
                 {% for message in messages %}
-                <div class="alert {{ message.tags }} alert-dissmissable fade show" id="messages" role="alert">
+                <div class="alert {{ message.tags }} alert-dissmissable fade show text-center" id="messages"
+                    role="alert">
                     {{ message | safe }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
                 </div>
