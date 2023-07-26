@@ -41,9 +41,10 @@ class LessonBookingForm(forms.ModelForm):
         cleaned_data = super().clean()
         lesson_date = cleaned_data.get('lesson_date')
         lesson_time = cleaned_data.get('lesson_time')
-        no_participants = cleaned_data.get('no_participants')
+        no_participants_str = cleaned_data.get('no_participants')
 
-        if lesson_date and lesson_time and no_participants:
+        if lesson_date and lesson_time and no_participants_str:
+            no_participants = int(no_participants_str)
             booking_datetime = timezone.make_aware(
                 timezone.datetime.combine(lesson_date, lesson_time)
             )
