@@ -49,8 +49,9 @@ class LessonBookingForm(forms.ModelForm):
                 timezone.datetime.combine(lesson_date, lesson_time)
             )
             existing_bookings = LessonBooking.objects.filter(
-                lesson_date=booking_datetime
-            )
+                lesson_date=booking_datetime.date(),
+                lesson_time=booking_datetime.time(),
+            ).exclude(pk=self.instance.pk)
 
             total_participants = existing_bookings.aggregate(
                 Sum('no_participants')).get('no_participants__sum', 0)
@@ -98,8 +99,8 @@ class UpdateLessonBookingForm(forms.ModelForm):
 
     def clean(self):
         cleaned_data = super().clean()
-        lesson_date = self.instance.lesson_date
-        lesson_time = self.instance.lesson_time
+        lesson_date = cleaned_data.get('lesson_date')
+        lesson_time = cleaned_data.get('lesson_time')
         no_participants_str = cleaned_data.get('no_participants')
 
         if lesson_date and lesson_time and no_participants_str:
@@ -108,7 +109,8 @@ class UpdateLessonBookingForm(forms.ModelForm):
                 timezone.datetime.combine(lesson_date, lesson_time)
             )
             existing_bookings = LessonBooking.objects.filter(
-                lesson_date=booking_datetime
+                lesson_date=booking_datetime.date(),
+                lesson_time=booking_datetime.time(),
             ).exclude(pk=self.instance.pk)
 
             total_participants = existing_bookings.aggregate(
