@@ -12,7 +12,7 @@ class LessonBooking(models.Model):
                                   editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE,
                              related_name="user_booking")
-    updated_on = models.DateField(auto_now_add=True)
+    updated_on = models.DateField(auto_now=True)
     created_on = models.DateField(auto_now_add=True)
     focus_lesson = models.TextField()
     lesson_date = models.DateField(auto_now=False)
