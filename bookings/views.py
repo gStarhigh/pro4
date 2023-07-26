@@ -5,6 +5,7 @@ from .models import LessonBooking
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
 from django.urls import reverse
+from django.utils import timezone
 
 
 class Home(generic.TemplateView):
@@ -37,7 +38,9 @@ class MyBookings(LoginRequiredMixin, generic.ListView):
     model = LessonBooking
 
     def get_queryset(self):
-        return LessonBooking.objects.filter(user=self.request.user)
+        today = timezone.now().date()
+        return LessonBooking.objects.filter(user=self.request.user,
+                                            lesson_date__gte=today)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
