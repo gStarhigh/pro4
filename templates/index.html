@@ -20,20 +20,20 @@
                 {% if user.is_authenticated %}
                 <!-- Button trigger modal -->
                 <button type="button" class="btn card-btn btn-success" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
+                    data-bs-target="#loginmodal">
                     <a href="{% url 'CreateLessonBooking' %}">Book now!</a>
                 </button>
                 {% else %}
                 <button type="button" class="btn card-btn btn-success" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
+                    data-bs-target="#loginmodal">
                     <a href="#">Book now!</a>
                 </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="Login to create a booking"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Please login!</h1>
+                                <h1 class="modal-title fs-5">Please login!</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
