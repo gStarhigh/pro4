@@ -71,7 +71,19 @@
             </div>
         </div>
     </nav>
-
+    <!-- Information messages for the user when performing an action-->
+    <div class="container">
+        <div class="row">
+            <div class="cold-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dissmissable fade show" id="messages" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
     <!--Main content-->
     <main>

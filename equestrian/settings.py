@@ -13,6 +13,7 @@ import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
+from django.contrib.messages import constants as messages
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-gstarhigh-pro4-4wvtoqh6q6l.ws-eu102.gitpod.io',
                  'star-pro4-3dc81848625c.herokuapp.com']
@@ -57,6 +58,14 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: ' alert-danger',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
