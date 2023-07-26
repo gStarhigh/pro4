@@ -16,7 +16,10 @@
                         {{ booking.lesson_time|time:"H:i" }}</h5>
                     <p class="card-text">Number of participants: {{ booking.no_participants }}</p>
                     <p class="card-text">Booking date: {{ booking.created_on }}</p>
-                    <p class="card-text">Status: {{ booking.get_booking_status_display }}</p>
+                    <p class="card-text">Status:
+                        <span class="{% if booking.booking_status == 1 %}text-success{% else %}text-danger{% endif %}">
+                            {{ booking.get_booking_status_display }}
+                        </span></p>
                     <p class="card-text">Focus for the lesson: {{ booking.focus_lesson }}</p>
                     <a href="{% url 'delete_booking' booking.booking_id %}"
                         class="btn btn-danger btn-signup btn-sm">Delete
