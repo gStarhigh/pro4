@@ -74,14 +74,14 @@ class UpdateBooking(View):
     template_name = 'update_booking.html'
 
     def get(self, request, booking_id):
-        booking = get_object_or_404(LessonBooking, id=booking_id,
+        booking = get_object_or_404(LessonBooking, booking_id=booking_id,
                                     user=request.user)
         form = LessonBookingForm(instance=booking)
         return render(request, self.template_name,
                       {'form': form, 'booking': booking})
 
     def post(self, request, booking_id):
-        booking = get_object_or_404(LessonBooking, id=booking_id,
+        booking = get_object_or_404(LessonBooking, booking_id=booking_id,
                                     user=request.user)
         form = LessonBookingForm(request.POST, instance=booking)
         if form.is_valid():
