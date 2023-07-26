@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
-from .forms import LessonBookingForm
+from .forms import LessonBookingForm, UpdateLessonBookingForm
 from .models import LessonBooking
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
@@ -76,14 +76,14 @@ class UpdateBooking(View):
     def get(self, request, booking_id):
         booking = get_object_or_404(LessonBooking, booking_id=booking_id,
                                     user=request.user)
-        form = LessonBookingForm(instance=booking)
+        form = UpdateLessonBookingForm(instance=booking)
         return render(request, self.template_name,
                       {'form': form, 'booking': booking})
 
     def post(self, request, booking_id):
         booking = get_object_or_404(LessonBooking, booking_id=booking_id,
                                     user=request.user)
-        form = LessonBookingForm(request.POST, instance=booking)
+        form = UpdateLessonBookingForm(request.POST, instance=booking)
         if form.is_valid():
             booking = form.save(commit=False)
             booking.user = request.user

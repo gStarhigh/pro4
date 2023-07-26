@@ -71,3 +71,55 @@ class DeleteBooking(forms.Form):
         required=True,
         widget=forms.HiddenInput(attrs={"value": True})
     )
+
+
+class UpdateLessonBookingForm(forms.ModelForm):
+    """
+    Form for updating the Booked lesson.
+    """
+    NO_PARTICIPANTS_CHOICES = [(i, str(i)) for i in range(1, 4)]
+
+    class Meta:
+        model = LessonBooking
+        fields = ['focus_lesson', 'lesson_date', 'lesson_time',
+                  'no_participants', 'level_ekipage', 'terms_checked']
+        widgets = {
+            'focus_lesson': forms.Textarea(attrs={'cols': 30, 'rows': 10}),
+            'lesson_date': forms.DateInput(attrs={'type': 'date', 'min':
+                                                  timezone.now()
+                                                  .strftime('%Y-%m-%d')}),
+            'lesson_time': forms.TimeInput(attrs={'type': 'time'}),
+        }
+        labels = {
+            'focus_lesson': 'Enter the focus for your lesson:'
+        }
+    no_participants = forms.ChoiceField(choices=NO_PARTICIPANTS_CHOICES,
+                                        widget=forms.Select)
+
+    def clean(self):
+        cleaned_data = super().clean()
+        lesson_date = self.instance.lesson_date
+        lesson_time = self.instance.lesson_time
+        no_participants_str = cleaned_data.get('no_participants')
+
+        if lesson_date and lesson_time and no_participants_str:
+            no_participants = int(no_participants_str)
+            booking_datetime = timezone.make_aware(
+                timezone.datetime.combine(lesson_date, lesson_time)
+            )
+            existing_bookings = LessonBooking.objects.filter(
+                lesson_date=booking_datetime
+            ).exclude(pk=self.instance.pk)
+
+            total_participants = existing_bookings.aggregate(
+                Sum('no_participants')).get('no_participants__sum', 0)
+
+            if total_participants is None:
+                total_participants = 0
+
+            available_slots = 3 - total_participants
+
+            if available_slots < no_participants:
+                raise forms.ValidationError("Booking is full for the "
+                                            "selected date and time.")
+        return cleaned_data
