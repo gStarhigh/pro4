@@ -23,7 +23,9 @@ class LessonBookingForm(forms.ModelForm):
             'lesson_time': forms.TimeInput(attrs={'type': 'time'}),
         }
         labels = {
-            'focus_lesson': 'Enter the focus for your lesson:'
+            'focus_lesson': 'Enter the focus for your lesson:',
+            'terms_checked': 'I have read and understood the terms',
+            'level_ekipage': 'Choose your level:',
         }
     no_participants = forms.ChoiceField(choices=NO_PARTICIPANTS_CHOICES,
                                         widget=forms.Select)
