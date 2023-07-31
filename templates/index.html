@@ -7,11 +7,17 @@
     <div class="row flex-md-row py-3 m-0">
         <div class="col-md-7 col-lg-5 align-self-center p-0 pl-md-5 ">
             <img src="https://res.cloudinary.com/draygqe7t/image/upload/v1689344195/star1_bbge7i.jpg"
-                class="img-fluid family-image" alt="family_dinner">
+                class="img-fluid hero-img" alt="Image of the ridetrack">
         </div>
         {% if user.is_authenticated %}
         <div class="col-md-5 col-lg-7 hero-info-div text-center">
-            <h1 class="mt-4 mb-2 hero-text">Welcome back</h1>
+            <h1 class="mt-4 mb-2 hero-text">Welcome back <span>{{ user.username }}</span>!</h1>
+            <br>
+            <br>
+            <p>More information here...</p>
+            <p>More information here...</p>
+            <p>More information here...</p>
+            <p>More information here...</p>
             <div class="lead mt-4">
                 Book your next lesson today!
                 <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0"
@@ -21,6 +27,12 @@
         {% else %}
         <div class="col-md-5 col-lg-7 hero-info-div text-center">
             <h1 class="mt-4 mb-2 hero-text">Get to Grand Prix level with us!</h1>
+            <br>
+            <br>
+            <p>More information here...</p>
+            <p>More information here...</p>
+            <p>More information here...</p>
+            <p>More information here...</p>
             <div class="lead mt-4">
                 Get started today <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0"
                     href="{%  url 'account_login' %}">Sign Up!</a>

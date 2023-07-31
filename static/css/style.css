@@ -64,6 +64,15 @@ a {
 }
 
 
+.hero-img {
+    border-radius: 20px;
+}
+
+.hero-info-div {
+    background-color: #C1D7AE;
+    border-radius: 20px;
+}
+
 /* Login page */
 
 .login-cont {
