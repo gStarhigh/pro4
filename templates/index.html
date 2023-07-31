@@ -2,57 +2,35 @@
 
 {% block content %}
 
-<!--Hero image-->
-<div class="container hero">
-    <img src="https://res.cloudinary.com/draygqe7t/image/upload/v1689344195/star1_bbge7i.jpg" class="img-fluid"
-        alt="An image of the pastures and ride track">
-</div>
 
-<!--The card section for the lesson booking-->
-<section>
-    <div class="container lesson-card">
-        <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/draygqe7t/image/upload/v1689343976/star2_teltz6.jpg"
-                class="card-img-top" alt="An image of the ride track">
-            <div class="card-body">
-                <h5 class="card-title">Book your riding lesson today!</h5>
-                <p class="card-text">Do you want to improve? Look no further!</p>
-                {% if user.is_authenticated %}
-                <!-- Button trigger modal -->
-                <button type="button" class="btn card-btn btn-success" data-bs-toggle="modal"
-                    data-bs-target="#loginmodal">
-                    <a href="{% url 'CreateLessonBooking' %}">Book now!</a>
-                </button>
-                {% else %}
-                <button type="button" class="btn card-btn btn-success" data-bs-toggle="modal"
-                    data-bs-target="#loginmodal">
-                    <a href="#">Book now!</a>
-                </button>
-                <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="Login to create a booking"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5">Please login!</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                You must be logged in to create a booking. Please create your account and log in to
-                                proceed.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary"><a
-                                        href="{% url 'account_login' %}">Login!</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endif %}
+<div class="container px-2 py-3">
+    <div class="row flex-md-row py-3 m-0">
+        <div class="col-md-7 col-lg-5 align-self-center p-0 pl-md-5 ">
+            <img src="https://res.cloudinary.com/draygqe7t/image/upload/v1689344195/star1_bbge7i.jpg"
+                class="img-fluid family-image" alt="family_dinner">
+        </div>
+        {% if user.is_authenticated %}
+        <div class="col-md-5 col-lg-7 hero-info-div text-center">
+            <h1 class="mt-4 mb-2 hero-text">Welcome back</h1>
+            <div class="lead mt-4">
+                Book your next lesson today!
+                <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0"
+                    href="{%  url 'CreateLessonBooking' %}">Book here!</a>
             </div>
         </div>
+        {% else %}
+        <div class="col-md-5 col-lg-7 hero-info-div text-center">
+            <h1 class="mt-4 mb-2 hero-text">Get to Grand Prix level with us!</h1>
+            <div class="lead mt-4">
+                Get started today <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0"
+                    href="{%  url 'account_login' %}">Sign Up!</a>
+            </div>
+        </div>
+        {% endif %}
+
+        <!--Information section here....-->
     </div>
+</div>
 </section>
 
 {%endblock%}
