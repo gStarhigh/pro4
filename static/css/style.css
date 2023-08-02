@@ -48,12 +48,6 @@ a {
     margin-bottom: 80px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card-img-top {
     max-width: 100%;
     height: auto;
@@ -191,6 +185,9 @@ a {
 
 .booking-cont {
     margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .booking-cards,
