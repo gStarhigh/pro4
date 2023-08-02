@@ -67,6 +67,10 @@ a {
     border-radius: 20px;
 }
 
+.login-btn {
+    margin-left: 40px;
+}
+
 .home-break-index {
     width: 30vw;
     border: 2px solid #2D93AD;
