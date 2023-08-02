@@ -81,6 +81,11 @@ a {
     font-size: 50px;
 }
 
+.info-cont {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /* Login page */
 
 .login-cont {
