@@ -275,9 +275,36 @@ a {
 
 /* Media queries */
 
+/*Query for max scren size of 1200px*/
+@media (min-width: 1200px) {
+
+    .info-text {
+        padding-top: 10px;
+    }
+
+    .info-btn {
+        padding-top: 10px;
+    }
+}
+
+/*Query for max scren size of 991px*/
+@media (max-width: 991px) {
+    .info-btn {
+        padding-bottom: 10px;
+    }
+}
+
 /*Query for max scren size of 768px*/
 @media (max-width: 768px) {
     .hero-img {
         margin-bottom: 20px;
+    }
+
+    .info-text {
+        padding-bottom: 10px;
+    }
+
+    .info-btn {
+        padding-bottom: 10px;
     }
 }

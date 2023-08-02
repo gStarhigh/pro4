@@ -12,8 +12,8 @@
         {% if user.is_authenticated %}
         <div class="col-md-5 col-lg-7 hero-info-div text-center">
             <h2 class="mt-4 mb-2 hero-text">Welcome back <span>{{ user.username }}</span>!</h2>
-            <p>Ready to improve some more?</p>
-            <div class="lead mt-4">
+            <p class="info-text">Ready to improve some more?</p>
+            <div class="lead mt-4 info-btn">
                 <p>Book your next lesson today!</p>
                 <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0"
                     href="{%  url 'CreateLessonBooking' %}">Book here!</a>
@@ -22,8 +22,8 @@
         {% else %}
         <div class="col-md-5 col-lg-7 hero-info-div text-center">
             <h2 class="mt-4 mb-2 hero-text">Get to Grand Prix level with us!</h2>
-            <p>We'll help you reach your goals!</p>
-            <div class="lead mt-4">
+            <p class="info-text">We'll help you reach your goals!</p>
+            <div class="lead mt-4 info-btn">
                 <p>Get started today</p>
                 <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0"
                     href="{%  url 'account_login' %}">Sign Up!</a>
