@@ -67,6 +67,16 @@ a {
     border-radius: 20px;
 }
 
+.home-break-index {
+    width: 30vw;
+    border: 2px solid #2D93AD;
+    margin: 0 auto;
+}
+
+.index-info-section {
+    margin-top: 20px;
+}
+
 /* Login page */
 
 .login-cont {
