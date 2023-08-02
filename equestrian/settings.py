@@ -98,6 +98,7 @@ WSGI_APPLICATION = 'equestrian.wsgi.application'
 
 # Account settings
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_REQUIRED = True
 
 
 DATABASES = {
