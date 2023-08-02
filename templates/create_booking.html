@@ -15,7 +15,7 @@
                 <br>
                 <p>Name: {{ user.username }}</p>
                 <p>Email: {{ user.email }}</p>
-                <form method="post" class="booking-form">
+                <form method="post" class="booking-form" onsubmit="return sendMail(this);">
                     <div class="form-group">
                         {% csrf_token %}
                         {{ form.as_p }}
