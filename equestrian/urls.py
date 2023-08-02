@@ -29,4 +29,5 @@ urlpatterns = [
          name='delete_booking'),
     path('update_booking/<uuid:booking_id>/', views.UpdateBooking.as_view(),
          name='update_booking'),
+    path('about', views.About.as_view(), name='about'),
 ]

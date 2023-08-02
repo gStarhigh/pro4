@@ -16,6 +16,11 @@ class Home(generic.TemplateView):
     template_name = "index.html"
 
 
+class About(generic.TemplateView):
+    """ This view is used to display the about page """
+    template_name = "about.html"
+
+
 class CreateLessonBooking(View):
     """ This view is used to display the booking page """
     template_name = 'create_booking.html'
