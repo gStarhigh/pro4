@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.views.generic.edit import FormView
 from django.views import generic, View
-from .forms import LessonBookingForm, UpdateLessonBookingForm, DeleteBooking
+from .forms import (LessonBookingForm, UpdateLessonBookingForm, DeleteBooking,
+                    ContactForm)
 from .models import LessonBooking
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
@@ -19,6 +21,13 @@ class Home(generic.TemplateView):
 class About(generic.TemplateView):
     """ This view is used to display the about page """
     template_name = "about.html"
+
+
+class Contact(FormView):
+    """ This view is used to display the Contact page """
+    template_name = "contact.html"
+    form_class = ContactForm
+    success_url = "index.html"
 
 
 class CreateLessonBooking(View):

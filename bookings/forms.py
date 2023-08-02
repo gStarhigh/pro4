@@ -146,3 +146,8 @@ class UpdateLessonBookingForm(forms.ModelForm):
                 raise forms.ValidationError("Booking is full for the "
                                             "selected date and time.")
         return cleaned_data
+
+
+class ContactForm(forms.Form):
+    class Meta:
+        fields = ['name', 'email_address', 'subject',]
