@@ -277,6 +277,9 @@ a {
 
 /*Query for max scren size of 1200px*/
 @media (min-width: 1200px) {
+    .hero-text {
+        padding-top: 40px;
+    }
 
     .info-text {
         padding-top: 10px;
