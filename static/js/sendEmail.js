@@ -17,13 +17,4 @@ function sendMail(LessonBookingForm) {
     }
 
     emailjs.send(serviceID, templateID, templateParams)
-        .then(
-            function (response) {
-                console.log("SUCCESS", response);
-            },
-            function (error) {
-                console.log("FAILED", error);
-            }
-        );
-    return false;
 }
