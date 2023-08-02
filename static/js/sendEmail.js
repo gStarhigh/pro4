@@ -1,11 +1,12 @@
 function sendMail(LessonBookingForm) {
+    const username = document.querySelector('p[data-username]').getAttribute('data-username');
+    const email = document.querySelector('p[data-email]').getAttribute('data-email');
     const serviceID = "service_bp6z8w3";
     const templateID = "booking_created";
-    const username = "{{ user.username }}";
     const templateParams = {
         "from_name": username,
-        "from_email": "{{user.email}}",
-        "booking_info": "{{user.focus_lesson}}",
+        "from_email": email,
+        "booking_info": "",
 
     }
 

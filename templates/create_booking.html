@@ -13,8 +13,8 @@
                 <h3 class="login-title">Book your lesson here</h3>
                 <hr class="home-break">
                 <br>
-                <p>Name: {{ user.username }}</p>
-                <p>Email: {{ user.email }}</p>
+                <p data-username="{{ user.username }}">Name: {{ user.username }}</p>
+                <p data-email="{{ user.email }}">Email: {{ user.email }}</p>
                 <form method="post" class="booking-form" onsubmit="return sendMail(this);">
                     <div class="form-group">
                         {% csrf_token %}
