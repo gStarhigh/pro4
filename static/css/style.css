@@ -261,3 +261,12 @@ a {
 .social-links i:hover {
     font-size: 180%;
 }
+
+/* Media queries */
+
+/*Query for max scren size of 768px*/
+@media (max-width: 768px) {
+    .hero-img {
+        margin-bottom: 20px;
+    }
+}
