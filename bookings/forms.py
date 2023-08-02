@@ -23,6 +23,8 @@ class LessonBookingForm(forms.ModelForm):
             'lesson_time': forms.TimeInput(attrs={'type': 'time'}),
         }
         labels = {
+            'lesson_date': 'Available days are Monday to Friday',
+            'lesson_time': 'Choose a time between 18:00 and 21:00.',
             'focus_lesson': 'Enter the focus for your lesson:',
             'terms_checked': 'I have read and understood the terms',
             'level_ekipage': 'Choose your level:',
