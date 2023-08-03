@@ -1,9 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h2>Contact Us</h2>
-
-<p>Under construction, check back later!</p>
-
-{%endblock%}
+<div class="container contact-cont">
+    <div class="card mb-4 mt-3">
+        <div class="card-body">
+            <form method="post" class="ContactForm">
+                <div class="form-group">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                </div>
+                <div class="form-group button-group">
+                    <button type="reset" class="btn btn-danger btn-lg" value="Reset">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-signup btn-lg">Send Email</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

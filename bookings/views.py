@@ -29,14 +29,8 @@ class Contact(FormView):
     form_class = ContactForm
     success_url = "index.html"
 
-    if request.method == "POST":
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            pass
-        return
-    else:
-        form = ContactForm()
-    return render(request, 'contact.html', {'form': form})
+    def form_valid(self, form):
+        return super().form.valid(form)
 
 
 class CreateLessonBooking(LoginRequiredMixin, View):
