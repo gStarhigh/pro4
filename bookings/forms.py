@@ -149,8 +149,16 @@ class UpdateLessonBookingForm(forms.ModelForm):
 
 
 class ContactForm(forms.Form):
+    """
+    Contact form for the user to contact the page owner.
+    """
     fields = ['name', 'email', 'subject', 'message']
     name = forms.CharField(required=True)
     email = forms.EmailField(required=True)
     subject = forms.CharField(max_length=100)
     message = forms.CharField(widget=forms.Textarea)
+
+    def __init__(self, *args, **kwargs):
+        # Get the info from the logged in user, if they exist.
+        user = kwargs.pop('user', None)
+        super(ContactForm, self).__init__(*args, **kwargs)
