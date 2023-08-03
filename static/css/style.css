@@ -274,7 +274,9 @@ a {
 
 /* Contact Page */
 .contact-cont {
-    max-width: 50vw;
+    max-width: 40vw;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 
@@ -345,6 +347,10 @@ a {
 
     .booking-cont {
         max-width: 80vw;
+    }
+
+    .contact-cont {
+        max-width: 60vw;
     }
 }
 
