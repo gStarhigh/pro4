@@ -67,8 +67,24 @@ class MyBookings(LoginRequiredMixin, generic.ListView):
 
     def get_queryset(self):
         today = timezone.now().date()
-        return LessonBooking.objects.filter(user=self.request.user,
-                                            lesson_date__gte=today)
+        booking_status = self.request.GET.get('booking_status')
+
+        if booking_status == 'upcoming':
+            return LessonBooking.objects.filter(
+                user=self.request.user,
+                lesson_date__gte=today,
+                booking_status=1
+            )
+        elif booking_status == 'completed':
+            return LessonBooking.objects.filter(
+                user=self.request.user,
+                lesson_date__lt=today,
+                booking_status=1
+            )
+        else:
+            return LessonBooking.objects.filter(
+                user=self.request.user
+            )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
