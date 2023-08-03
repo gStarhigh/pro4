@@ -36,6 +36,7 @@ class Contact(FormView):
         return kwargs
 
     def form_valid(self, form):
+        messages.info(self.request, 'Your message was sent successfully!')
         return super().form_valid(form)
 
 
