@@ -293,6 +293,13 @@ a {
 
 /* Media queries */
 
+/*Query for max screen size of 1440px*/
+@media (max-width: 1440px) {
+    .info-div {
+        min-height: 350px;
+    }
+}
+
 /*Query for min screen size of 1200px*/
 @media (min-width: 1200px) {
     .hero-text {
@@ -307,17 +314,13 @@ a {
         padding-top: 10px;
     }
 
-    .booking-cont {
-        max-width: 40vw;
+    .info-div {
+        min-height: 350px;
     }
 }
 
-/*Query for min screen size of 991px*/
-@media (min-width: 991px) {
-    .booking-cont {
-        max-width: 50vw;
-    }
-
+/*Query for max screen size of 1200px*/
+@media (max-width: 1200px) {
     .info-div {
         min-height: 390px;
     }
