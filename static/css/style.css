@@ -97,6 +97,10 @@ a {
     background-color: #FBFEF9;
 }
 
+.info-text {
+    padding: 5px;
+}
+
 /* Login page */
 
 .login-cont {
