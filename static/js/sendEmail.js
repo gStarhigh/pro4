@@ -18,3 +18,20 @@ function sendMail(LessonBookingForm) {
 
     emailjs.send(serviceID, templateID, templateParams)
 }
+
+function SendContactMail(ContactForm) {
+    const name = document.getElementById("id_name");
+    const email = document.getElementById("id_email");
+    const subject = document.getElementById("id_subject");
+    const message = document.getElementById("id_message");
+
+    const serviceID = "service_bp6z8w3";
+    const templateID = "contact_form";
+    const templateParams = {
+        "from_name": name,
+        "from_email": email,
+        "subject": subject,
+        "message": message,
+    }
+    emailjs.send(serviceID, templateID, templateParams)
+}

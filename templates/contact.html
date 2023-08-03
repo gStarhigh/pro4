@@ -8,7 +8,7 @@
             <h2 class="login-title">Contact us!</h2>
             <hr class="home-break">
             <br>
-            <form method="post" class="ContactForm">
+            <form method="post" class="ContactForm" onsubmit="return SendContactMail(this);">
                 <div class="form-group">
                     {% csrf_token %}
                     {{ form.as_p }}
