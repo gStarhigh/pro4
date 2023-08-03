@@ -1,3 +1,4 @@
+// Function for sending email from when a lesson is booked.
 function sendMail() {
     const username = document.querySelector('p[data-username]').getAttribute('data-username');
     const email = document.querySelector('p[data-email]').getAttribute('data-email');
@@ -19,6 +20,7 @@ function sendMail() {
     emailjs.send(serviceID, templateID, templateParams)
 }
 
+// Function for sending email from the contact form.
 function SendContactMail() {
     const name = document.querySelector('[name="name"]').value;
     const email = document.querySelector('[name="email"]').value;
