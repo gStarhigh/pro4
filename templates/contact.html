@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <div class="container contact-cont">
     <div class="card mb-4 mt-3">
         <div class="card-body">
+            <h2 class="login-title">Contact us!</h2>
+            <hr class="home-break">
+            <br>
             <form method="post" class="ContactForm">
                 <div class="form-group">
                     {% csrf_token %}
