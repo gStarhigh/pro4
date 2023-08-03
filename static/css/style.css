@@ -210,6 +210,15 @@ a {
     border: 5px;
 }
 
+/* Create Bookings page */
+
+.create-cont {
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+}
+
 /* My bookings page */
 
 .booking-title {
@@ -363,6 +372,10 @@ a {
     .contact-cont {
         max-width: 60vw;
     }
+
+    .create-cont {
+        min-width: 60vw;
+    }
 }
 
 /*Query for max screen size of 768px*/
@@ -390,6 +403,10 @@ a {
     .booking-cont {
         max-width: 60vw;
     }
+
+    .create-cont {
+        min-width: 80vw;
+    }
 }
 
 /*Query for max screen size of 490px*/
@@ -400,6 +417,10 @@ a {
 
     .btn-signup {
         margin-top: 5px;
+    }
+
+    .create-cont {
+        min-width: 100vw;
     }
 
 }
