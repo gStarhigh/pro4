@@ -90,6 +90,13 @@ a {
     margin-bottom: 50px;
 }
 
+
+.info-div {
+    border-radius: 10px;
+    background-clip: padding-box;
+    background-color: #FBFEF9;
+}
+
 /* Login page */
 
 .login-cont {
