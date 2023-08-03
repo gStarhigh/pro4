@@ -283,7 +283,7 @@ a {
 
 /* Media queries */
 
-/*Query for max scren size of 1200px*/
+/*Query for min scren size of 1200px*/
 @media (min-width: 1200px) {
     .hero-text {
         padding-top: 40px;
@@ -296,6 +296,17 @@ a {
     .info-btn {
         padding-top: 10px;
     }
+
+    .booking-cont {
+        max-width: 40vw;
+    }
+}
+
+/*Query for min scren size of 991px*/
+@media (min-width: 991px) {
+    .booking-cont {
+        max-width: 50vw;
+    }
 }
 
 /*Query for max scren size of 991px*/
@@ -306,7 +317,7 @@ a {
 }
 
 /*Query for max scren size of 768px*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero-img {
         margin-bottom: 20px;
     }
