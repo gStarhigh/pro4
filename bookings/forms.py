@@ -165,7 +165,7 @@ class ContactForm(forms.Form):
 
         # If the user is logged in, get the name and email and make
         # the fields readonly.
-        if user and user.is_autheticated:
+        if user and user.is_authenticated:
             self.fields['name'].initial = user.username
             self.fields['email'].initial = user.email
             self.fields['name'].widget.attrs['readonly'] = True

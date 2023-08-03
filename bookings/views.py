@@ -29,6 +29,12 @@ class Contact(FormView):
     form_class = ContactForm
     success_url = "index.html"
 
+    def get_form_kwargs(self):
+        kwargs = super().get_form_kwargs()
+        kwargs['user'] = (self.request.user
+                          if self.request.user.is_authenticated else None)
+        return kwargs
+
     def form_valid(self, form):
         return super().form.valid(form)
 
