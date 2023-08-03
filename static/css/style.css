@@ -93,13 +93,12 @@ a {
 
 .info-div {
     border-radius: 10px;
+    padding: 5px;
     background-clip: padding-box;
     background-color: #FBFEF9;
+    min-height: 380px;
 }
 
-.info-text {
-    padding: 5px;
-}
 
 /* Login page */
 
