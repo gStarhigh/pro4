@@ -388,7 +388,7 @@ a {
     }
 
     .booking-cont {
-        max-width: 70vw;
+        max-width: 60vw;
     }
 }
 
@@ -396,6 +396,10 @@ a {
 @media (max-width: 490px) {
     .booking-cont {
         max-width: 90vw;
+    }
+
+    .btn-signup {
+        margin-top: 5px;
     }
 
 }
