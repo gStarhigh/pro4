@@ -30,7 +30,7 @@ class Contact(FormView):
     success_url = "index.html"
 
 
-class CreateLessonBooking(View):
+class CreateLessonBooking(LoginRequiredMixin, View):
     """ This view is used to display the booking page """
     template_name = 'create_booking.html'
 
@@ -66,7 +66,7 @@ class MyBookings(LoginRequiredMixin, generic.ListView):
         return context
 
 
-class DeleteBooking(View):
+class DeleteBooking(LoginRequiredMixin, View):
     """
     This view is used to confirm the deletion of a booking or throw an error.
     """
@@ -96,7 +96,7 @@ class DeleteBooking(View):
             return redirect('my_bookings')
 
 
-class UpdateBooking(View):
+class UpdateBooking(LoginRequiredMixin, View):
     """
     This view is used to update the booking of a lesson.
     """
