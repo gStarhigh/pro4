@@ -150,4 +150,8 @@ class UpdateLessonBookingForm(forms.ModelForm):
 
 class ContactForm(forms.Form):
     class Meta:
-        fields = ['name', 'email_address', 'subject',]
+        fields = ['name', 'email', 'subject', 'message']
+        name = forms.CharField(required=True)
+        email = forms.EmailField(required=True)
+        subject = forms.CharField(max_length=100)
+        message = forms.CharField(widget=forms.Textarea)
