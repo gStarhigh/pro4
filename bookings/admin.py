@@ -14,3 +14,17 @@ class LessonAdmin(SummernoteModelAdmin):
 
     def approve_lesson(self, request, queryset):
         queryset.update(booking_status=1)
+
+        """
+        Send an email to the user when the booking has been approved,
+        using emailJS.
+        """
+        for booking in queryset:
+            user = booking.user
+            subject = "Your booking has been approved."
+            message = f"Hello {user.username}. Your lesson has been approved."
+            f"Date: {lesson_date}"
+            f"Time: {lesson_time}"
+            "We look forward to seeing you!"
+            from_email = "starhog.gard@gmail.com"
+            to_email = [user.email]
