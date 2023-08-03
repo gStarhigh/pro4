@@ -162,3 +162,11 @@ class ContactForm(forms.Form):
         # Get the info from the logged in user, if they exist.
         user = kwargs.pop('user', None)
         super(ContactForm, self).__init__(*args, **kwargs)
+
+        # If the user is logged in, get the name and email and make
+        # the fields readonly.
+        if user and user.is_autheticated:
+            self.fields['name'].initial = user.username
+            self.fields['email'].initial = user.email
+            self.fields['name'].widget.attrs['readonly'] = True
+            self.fields['email'].widget.attrs['readonly'] = True
