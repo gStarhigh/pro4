@@ -6,7 +6,7 @@ from .forms import (LessonBookingForm, UpdateLessonBookingForm, DeleteBooking,
 from .models import LessonBooking
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.utils import timezone
 from django.contrib import messages
 from .validation import validate_booking_deletion
@@ -27,7 +27,7 @@ class Contact(FormView):
     """ This view is used to display the Contact page """
     template_name = "contact.html"
     form_class = ContactForm
-    success_url = "index.html"
+    success_url = reverse_lazy('Home')
 
     def get_form_kwargs(self):
         kwargs = super().get_form_kwargs()
@@ -36,7 +36,7 @@ class Contact(FormView):
         return kwargs
 
     def form_valid(self, form):
-        return super().form.valid(form)
+        return super().form_valid(form)
 
 
 class CreateLessonBooking(LoginRequiredMixin, View):
