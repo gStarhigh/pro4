@@ -220,6 +220,7 @@ a {
     margin: 50px auto;
     justify-content: center;
     align-items: center;
+    max-width: 50vw;
 }
 
 .booking-cards,
@@ -341,6 +342,10 @@ a {
     .info-div {
         min-height: 485px;
     }
+
+    .booking-cont {
+        max-width: 80vw;
+    }
 }
 
 /*Query for max screen size of 768px*/
@@ -362,6 +367,10 @@ a {
     }
 
     .contact-cont {
+        max-width: 100vw;
+    }
+
+    .booking-cont {
         max-width: 100vw;
     }
 }
