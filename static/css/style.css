@@ -256,6 +256,9 @@ a {
     margin: 10px;
 }
 
+.filter {
+    font-size: 110%;
+}
 
 /* Delete page*/
 .delete-cont {
@@ -326,12 +329,20 @@ a {
     .info-div {
         min-height: 350px;
     }
+
+    .booking-cont {
+        max-width: 90vw;
+    }
 }
 
 /*Query for max screen size of 1200px*/
 @media (max-width: 1200px) {
     .info-div {
         min-height: 390px;
+    }
+
+    .booking-cont {
+        max-width: 90vw;
     }
 }
 
@@ -377,6 +388,14 @@ a {
     }
 
     .booking-cont {
-        max-width: 100vw;
+        max-width: 70vw;
     }
+}
+
+/*Query for max screen size of 490px*/
+@media (max-width: 490px) {
+    .booking-cont {
+        max-width: 90vw;
+    }
+
 }

@@ -5,16 +5,23 @@
 <h2 class="login-title booking-title">My Bookings</h2>
 <hr class="home-break">
 <br>
-<form method="GET">
-    <label for="booking_status">Filter by status:</label>
-    <select id="booking_status" name="booking_status">
-        <option value="">All</option>
-        <option value="upcoming">Upcoming</option>
-        <option value="completed">Completed</option>
-    </select>
 
-    <input type="submit" value="Filter">
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <form method="GET" class="filter">
+                <label for="booking_status">Filter by status:</label>
+                <select id="booking_status" name="booking_status">
+                    <option value="">All</option>
+                    <option value="upcoming">Upcoming</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <input type="submit" value="Filter">
+            </form>
+
+        </div>
+    </div>
+</div>
 <div class="container booking-cont">
     {% if user_bookings %}
     <div class="row">
