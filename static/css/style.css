@@ -315,6 +315,17 @@ a {
     font-size: 180%;
 }
 
+/* About us page */
+.about-main {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.col-md-5 img {
+    width: 100%;
+}
+
+
 /* Error pages */
 .error-cont {
     display: flex;
@@ -426,6 +437,14 @@ a {
 
     .create-cont {
         min-width: 80vw;
+    }
+
+    .order-top {
+        order: -1;
+    }
+
+    .order-bot {
+        order: 6;
     }
 }
 
