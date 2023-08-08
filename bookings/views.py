@@ -42,20 +42,25 @@ class AccountDetails(LoginRequiredMixin, View):
         last_name = request.POST.get('last_name')
         email = request.POST.get('email')
 
+        messages_list = []
+
         if first_name != user.first_name:
             user.first_name = first_name
             user.save()
-            messages.info(request, 'Your First name has been updated!')
+            messages_list.append('Your First name has been updated!')
 
-        elif last_name != user.last_name:
+        if last_name != user.last_name:
             user.last_name = last_name
             user.save()
-            messages.info(request, 'Your Surname has been updated')
+            messages_list.append('Your Surname has been updated')
 
-        elif email != user.email:
+        if email != user.email:
             user.email = email
             user.save()
-            messages.info(request, 'Your Email address has been updated')
+            messages_list.append('Your Email address has been updated')
+
+        if messages_list:
+            messages.info(request, ' '.join(messages_list))
 
         return redirect('account_details')
 
