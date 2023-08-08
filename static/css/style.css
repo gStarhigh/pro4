@@ -329,6 +329,14 @@ a {
     border-radius: 10px;
 }
 
+.yt-cont {
+    width: 80vw;
+}
+
+.yt-video {
+    width: 100%;
+}
+
 #map {
     min-height: 360px;
 }

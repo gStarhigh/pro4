@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<!-- Headline section -->
 <section class="container px-0 info-cont">
     <div class="col-12 text-center">
         <h3>
@@ -11,6 +12,7 @@
     <br>
 </section>
 
+<!-- Different about us sections -->
 <main class="about-main d-flex flex-nowrap">
     <div class="container-fluid">
         <div class="row featurett">
@@ -55,23 +57,30 @@
         </div>
         <div class="row featurett">
             <div class="col-md-5 mt-3 order-bot">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="about-img" src="https://www.youtube.com/embed/4QcyivIFBHQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
             </div>
             <div class="col-md-7 mt-3 order-top">
-                <h3>The entire place</h3>
-                <p>Watch a YouTube video covering all acres</p>
+
             </div>
         </div>
     </div>
-
 </main>
+
+<!-- Embedded Youtube Video-->
+<div class="text-center">
+    <h3>The entire place</h3>
+    <p>Watch a YouTube video covering all acres</p>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <iframe width="560" height="315" class="about-img" src="https://www.youtube.com/embed/4QcyivIFBHQ"
+            title="Starhög Equestrian" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen aria-label="Video of the farm"></iframe>
+    </div>
+</div>
+
+<!-- Google Maps API -->
 <div>
     <h3 class="text-center">Where we are!</h3>
-    <div id="map" class="map" data-api-key="{{ api_key }}"></div>
+    <div id="map" class="about-img" data-api-key="{{ api_key }}" aria-label="Google map"></div>
 </div>
 {% endblock %}
