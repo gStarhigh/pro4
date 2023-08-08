@@ -3,13 +3,16 @@
 
 :root {
     --nav-color: #99c084;
+    --nav-txt-color: #3c153b;
+    --site-bgr-color: #88ab75;
+    --cont-bgr-color: rgb(255, 255, 255);
 }
 
 body,
 html {
     padding: 0;
     margin: 0;
-    background-color: #88ab75;
+    background-color: var(--site-bgr-color);
     min-height: 100%;
     max-width: 100vw;
 }
@@ -21,7 +24,7 @@ h3,
 p,
 a {
     font-family: 'Roboto', sans-serif;
-    color: #3c153b;
+    color: var(--nav-txt-color);
 }
 
 .btn a {
@@ -39,7 +42,7 @@ a {
 .navbar,
 .nav-link,
 .footer-container {
-    color: #3c153b;
+    color: var(--nav-txt-color);
     background-color: var(--nav-color);
 }
 
@@ -110,7 +113,7 @@ a {
     max-width: 400px;
     margin: 40px auto;
     padding: 10px 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cont-bgr-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 5px;
@@ -188,7 +191,7 @@ a {
     max-width: 440px;
     margin: 40px auto;
     padding: 10px 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cont-bgr-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 5px;
@@ -204,7 +207,7 @@ a {
     max-width: 440px;
     margin: 100px auto;
     padding: 10px 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cont-bgr-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 5px;
@@ -278,7 +281,7 @@ a {
     max-width: 400px;
     margin: 100px auto;
     padding: 10px 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cont-bgr-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 5px;
@@ -321,7 +324,7 @@ a {
     max-width: 440px;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cont-bgr-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 5px;
