@@ -32,6 +32,24 @@ class About(generic.TemplateView):
         return context
 
 
+class AccountDetails(LoginRequiredMixin, View):
+    def get(self, request):
+        return render(request, 'details.html', {'user': request.user})
+
+    def post(self, request):
+        user = request.user
+        first_name = request.POST.get('first_name')
+        last_name = request.POST.get('last_name')
+        email = request.POST.get('email')
+
+        user.first_name = first_name
+        user.last_name = last_name
+        user.email = email
+        user.save()
+
+        return redirect('account_details')
+
+
 class Contact(FormView):
     """ This view is used to display the Contact page """
     template_name = 'contact.html'

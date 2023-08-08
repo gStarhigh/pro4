@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+
+{% block content %}
+
+<div class="container login-cont">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h1 class="login-title text center"></h1>
+            <hr class="home-break">
+            <br>
+            <form method="POST">
+                {% csrf_token %}
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" value="{{ request.user.first_name }}"><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" value="{{ request.user.last_name }}"><br>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" value="{{ request.user.email }}"><br>
+                <label for="date_joined">Account Created:</label>
+                <input type="text" id="date_joined" value="{{ user.date_joined|date:'Y-m-d H:i:s' }}" readonly>
+                <input type="submit" value="Save Changes">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

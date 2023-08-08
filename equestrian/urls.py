@@ -31,4 +31,6 @@ urlpatterns = [
          name='update_booking'),
     path('about', views.About.as_view(), name='about'),
     path('contact/', views.Contact.as_view(), name='contact'),
+    path('details/', views.AccountDetails.as_view(), name="account_details"),
+
 ]
