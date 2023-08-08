@@ -341,6 +341,18 @@ a {
     min-height: 360px;
 }
 
+.contact-us-banner {
+    margin: 60px auto;
+    background-color: var(--nav-color);
+    height: fit-content;
+    align-items: center;
+    padding: 20px;
+}
+
+.fa-envelope {
+    margin-right: 5px;
+}
+
 /* Error pages */
 .error-cont {
     display: flex;
