@@ -1,6 +1,8 @@
 /*Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+
+/* Root and Body rules */
 :root {
     --nav-color: #99c084;
     --nav-txt-color: #3c153b;
@@ -104,7 +106,6 @@ a {
 
 
 /* Login page */
-
 .login-cont {
     display: flex;
     justify-content: center;
@@ -182,7 +183,6 @@ a {
 }
 
 /* Signup page */
-
 .signup-cont {
     display: flex;
     justify-content: center;
@@ -198,7 +198,6 @@ a {
 }
 
 /* Log out page */
-
 .logout-cont {
     display: flex;
     justify-content: center;
@@ -214,7 +213,6 @@ a {
 }
 
 /* Create Bookings page */
-
 .create-cont {
     margin: 50px auto;
     justify-content: center;
@@ -223,7 +221,6 @@ a {
 }
 
 /* My bookings page */
-
 .booking-title {
     margin-top: 40px;
 }
@@ -296,7 +293,6 @@ a {
 
 
 /* Footer */
-
 .social-links {
     text-align: center;
     padding: 0;
@@ -330,11 +326,11 @@ a {
 }
 
 .yt-cont {
-    width: 80vw;
+    margin-top: 80px;
 }
 
-.yt-video {
-    width: 100%;
+.map-container {
+    margin-top: 80px;
 }
 
 #map {
@@ -355,7 +351,6 @@ a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 5px;
 }
-
 
 
 /* Media queries */
