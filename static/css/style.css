@@ -312,6 +312,10 @@ a {
 }
 
 /* About us page */
+.about-section {
+    margin-top: 50px;
+}
+
 .about-main {
     max-width: 80vw;
     margin: 0 auto;
