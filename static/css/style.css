@@ -180,7 +180,8 @@ a {
 
 /* Signup page */
 
-.signup-cont {
+.signup-cont,
+.error-cont {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,6 +312,11 @@ a {
 .social-links i:hover {
     font-size: 180%;
 }
+
+/* Error pages */
+
+
+
 
 /* Media queries */
 
