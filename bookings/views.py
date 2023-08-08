@@ -20,7 +20,10 @@ class Home(generic.TemplateView):
 
 
 class About(generic.TemplateView):
-    """ This view is used to display the about page """
+    """ This view is used to display the about page,
+    and gets the Google Maps API key from Settings.py that gets it from env.py.
+    This way keeping it safe and not published.
+    """
     template_name = 'about.html'
 
     def get_context_data(self, **kwargs):
