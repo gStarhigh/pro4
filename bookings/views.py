@@ -42,10 +42,20 @@ class AccountDetails(LoginRequiredMixin, View):
         last_name = request.POST.get('last_name')
         email = request.POST.get('email')
 
-        user.first_name = first_name
-        user.last_name = last_name
-        user.email = email
-        user.save()
+        if first_name != user.first_name:
+            user.first_name = first_name
+            user.save()
+            messages.info(request, 'Your First name has been updated!')
+
+        elif last_name != user.last_name:
+            user.last_name = last_name
+            user.save()
+            messages.info(request, 'Your Surname has been updated')
+
+        elif email != user.email:
+            user.email = email
+            user.save()
+            messages.info(request, 'Your Email address has been updated')
 
         return redirect('account_details')
 
