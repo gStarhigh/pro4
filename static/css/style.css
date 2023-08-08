@@ -354,8 +354,13 @@ a {
 }
 
 /* Account Details Page */
-.account-form label {
+.account-form label,
+input {
     margin-top: 5px;
+}
+
+.btns {
+    padding-top: 20px;
 }
 
 /* Error pages */
