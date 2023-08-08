@@ -180,8 +180,7 @@ a {
 
 /* Signup page */
 
-.signup-cont,
-.error-cont {
+.signup-cont {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +313,19 @@ a {
 }
 
 /* Error pages */
-
+.error-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    max-width: 440px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px;
+}
 
 
 
