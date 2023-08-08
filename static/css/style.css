@@ -329,6 +329,10 @@ a {
     border-radius: 10px;
 }
 
+#map {
+    min-height: 360px;
+}
+
 /* Error pages */
 .error-cont {
     display: flex;

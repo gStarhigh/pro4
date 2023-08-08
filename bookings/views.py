@@ -11,21 +11,27 @@ from django.utils import timezone
 from django.contrib import messages
 from .validation import validate_booking_deletion
 from django.core.exceptions import ValidationError
+from equestrian import settings
 
 
 class Home(generic.TemplateView):
     """ This view is used to display the home page """
-    template_name = "index.html"
+    template_name = 'index.html'
 
 
 class About(generic.TemplateView):
     """ This view is used to display the about page """
-    template_name = "about.html"
+    template_name = 'about.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['api_key'] = settings.GOOGLE_SECRET
+        return context
 
 
 class Contact(FormView):
     """ This view is used to display the Contact page """
-    template_name = "contact.html"
+    template_name = 'contact.html'
     form_class = ContactForm
     success_url = reverse_lazy('Home')
 

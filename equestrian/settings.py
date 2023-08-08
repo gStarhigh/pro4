@@ -24,6 +24,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # Gets the SECRET KEY from env.py
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
+# Google Secret Keys from env.py
+GOOGLE_SECRET = os.environ.get("GOOGLE_MAPS_API_KEY")
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
