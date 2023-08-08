@@ -12,7 +12,7 @@
             <h1 class="login-title text center">Account Details</h1>
             <hr class="home-break">
             <br>
-            <form method="POST">
+            <form method="POST" class="account-form">
                 {% csrf_token %}
                 <label for="first_name">First Name:</label>
                 <input type="text" name="first_name" value="{{ request.user.first_name }}"><br>

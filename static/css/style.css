@@ -353,6 +353,11 @@ a {
     margin-right: 5px;
 }
 
+/* Account Details Page */
+.account-form label {
+    margin-top: 5px;
+}
+
 /* Error pages */
 .error-cont {
     display: flex;
