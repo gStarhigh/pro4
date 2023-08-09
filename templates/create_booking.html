@@ -5,7 +5,7 @@
 {% block head_title %}{% trans "Create Booking" %}{% endblock %}
 
 {% block content %}
-<main>
+<div>
     <div class="container create-cont">
         <div class="card mb-4 mt-3">
             <div class="card-body">
@@ -27,8 +27,7 @@
                     </div>
                 </form>
                 {% endif %}
-                <div class="modal fade" id="termsmodal" tabindex="-1" aria-labelledby="Terms of booking"
-                    aria-hidden="true">
+                <div class="modal fade" id="termsmodal" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -48,6 +47,6 @@
             </div>
         </div>
     </div>
-</main>
+</div>
 
 {% endblock %}
