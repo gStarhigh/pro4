@@ -15,9 +15,9 @@ function sendMail() {
         "lesson_time": lessonTime,
         "no_participants": noParticipants,
         "focus_lesson": focus,
-    }
+    };
 
-    emailjs.send(serviceID, templateID, templateParams)
+    emailjs.send(serviceID, templateID, templateParams);
 }
 
 // Function for sending email from the contact form.
@@ -34,6 +34,6 @@ function SendContactMail() {
         "from_email": email,
         "subject": subject,
         "message": message,
-    }
-    emailjs.send(serviceID, templateID, templateParams)
+    };
+    emailjs.send(serviceID, templateID, templateParams);
 }
