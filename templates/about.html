@@ -13,7 +13,7 @@
 </section>
 
 <!-- Different about us sections -->
-<main class="about-main d-flex flex-nowrap">
+<div class="about-main d-flex flex-nowrap">
     <div class="container-fluid">
         <div class="row featurett">
             <div class="col-md-5 mt-3 order-top">
@@ -106,7 +106,7 @@
             </div>
         </div>
     </div>
-</main>
+</div>
 
 <section class="contact-us-banner text-center">
     <h4><a aria-label="go to the contact page" href="{% url 'contact' %}"><i class="fa-regular fa-envelope"></i>Contact
@@ -121,7 +121,7 @@
     <p>Interested in how everything looks? Check out this video!</p>
     <div class="d-flex justify-content-center align-items-center">
         <iframe width="560" height="315" class="about-img" src="https://www.youtube.com/embed/4QcyivIFBHQ"
-            title="Starhög Equestrian" frameborder="0"
+            title="Starhög Equestrian"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen aria-label="Video of the farm"></iframe>
     </div>
@@ -129,6 +129,6 @@
 
 <!-- Google Maps API -->
 <div class="map-container">
-    <div id="map" class="about-img" data-api-key="{{ api_key }}" aria-label="Google map"></div>
+    <div id="map" class="about-img" data-api-key="{{ api_key }}"></div>
 </div>
 {% endblock %}
