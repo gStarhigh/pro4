@@ -269,6 +269,12 @@ a {
     font-size: 110%;
 }
 
+/* Update bookings page */
+.update {
+    max-width: 35vw;
+}
+
+
 /* Delete page*/
 .delete-cont {
     display: flex;
