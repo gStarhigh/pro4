@@ -118,7 +118,10 @@ class CreateLessonBooking(LoginRequiredMixin, TemplateView):
 
 # User's Booked Lessons View
 class MyBookings(LoginRequiredMixin, ListView):
-    """ This view is used to display the users booked lessons """
+    """
+    Display Users booked lessons.
+    Allow for filter by status: upcoming, completed or all.
+    """
     template_name = 'my_bookings.html'
     model = LessonBooking
 
@@ -152,7 +155,7 @@ class MyBookings(LoginRequiredMixin, ListView):
 # Delete Booking View
 class DeleteBooking(LoginRequiredMixin, DeleteView):
     """
-    This view is used to confirm the deletion of a booking or throw an error.
+    Confirm the deletion of a booking or throw an error.
     """
     template_name = 'delete_booking.html'
 
