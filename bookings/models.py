@@ -3,11 +3,33 @@ from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator
 import uuid
 
-
+# Booking status of the Lesson
 BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
 
 
+# Lesson model
 class LessonBooking(models.Model):
+    """
+    Represents a lesson booking made by a user.
+
+    Attributes:
+        booking_id (UUID): The unique identifier for the booking.
+        user (User): The user who made the booking.
+        updated_on (Date): The date when the booking was last updated.
+        created_on (Date): The date when the booking was created.
+        focus_lesson (str): Description of the focus of the lesson.
+        lesson_date (Date): The date of the lesson.
+        lesson_time (Time): The time of the lesson (default is 18:00).
+        terms_checked (bool): Indicates if the user has checked the terms.
+        no_participants (int): Number of participants (up to 3).
+        level_ekipage (str): The level of the ekipage.
+        booking_status (int): The status of the booking
+                            (0: Awaiting Approval, 1: Confirmed).
+
+    Meta:
+        ordering (list): The order in which lesson bookings are displayed.
+    """
+
     booking_id = models.UUIDField(primary_key=True, default=uuid.uuid4,
                                   editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE,
