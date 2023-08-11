@@ -75,7 +75,9 @@ class AccountDetails(LoginRequiredMixin, TemplateView):
 
 # Contact Page View
 class Contact(FormView):
-    """ This view is used to display the Contact page """
+    """
+    Display the Contact page and handle form submission.
+    """
     template_name = 'contact.html'
     form_class = ContactForm
     success_url = reverse_lazy('Home')
@@ -93,7 +95,9 @@ class Contact(FormView):
 
 # Create Lesson Booking View
 class CreateLessonBooking(LoginRequiredMixin, TemplateView):
-    """ This view is used to display the booking page """
+    """
+    Display the booking page and handle lesson booking submission.
+    """
     template_name = 'create_booking.html'
 
     def get(self, request):
