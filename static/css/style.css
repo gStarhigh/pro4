@@ -269,6 +269,11 @@ a {
     font-size: 110%;
 }
 
+.filter-btn {
+    border: none;
+    border-radius: 10px;
+}
+
 /* Update bookings page */
 .update {
     max-width: 35vw;
