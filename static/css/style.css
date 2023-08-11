@@ -302,6 +302,9 @@ a {
     margin-bottom: 60px;
 }
 
+#contact-btns {
+    margin: 0;
+}
 
 /* Footer */
 .social-links {
@@ -372,6 +375,7 @@ input {
 
 .btns {
     padding-top: 20px;
+    margin: 0;
 }
 
 /* Error pages */
