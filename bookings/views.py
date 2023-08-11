@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic.edit import FormView
+from django.views.generic import (TemplateView, DeleteView, UpdateView,
+                                  DetailView, ListView)
 from django.views import generic, View
 from .forms import (LessonBookingForm, UpdateLessonBookingForm, DeleteBooking,
                     ContactForm)
@@ -14,12 +16,12 @@ from django.core.exceptions import ValidationError
 from equestrian import settings
 
 
-class Home(generic.TemplateView):
+class Home(TemplateView):
     """ This view is used to display the home page """
     template_name = 'index.html'
 
 
-class About(generic.TemplateView):
+class About(TemplateView):
     """ This view is used to display the about page,
     and gets the Google Maps API key from Settings.py that gets it from env.py.
     This way keeping it safe and not published.
@@ -32,7 +34,7 @@ class About(generic.TemplateView):
         return context
 
 
-class AccountDetails(LoginRequiredMixin, View):
+class AccountDetails(LoginRequiredMixin, TemplateView):
     def get(self, request):
         return render(request, 'details.html', {'user': request.user})
 
@@ -82,7 +84,7 @@ class Contact(FormView):
         return super().form_valid(form)
 
 
-class CreateLessonBooking(LoginRequiredMixin, View):
+class CreateLessonBooking(LoginRequiredMixin, TemplateView):
     """ This view is used to display the booking page """
     template_name = 'create_booking.html'
 
@@ -102,7 +104,7 @@ class CreateLessonBooking(LoginRequiredMixin, View):
         return render(request, self.template_name, {'form': form})
 
 
-class MyBookings(LoginRequiredMixin, generic.ListView):
+class MyBookings(LoginRequiredMixin, ListView):
     """ This view is used to display the users booked lessons """
     template_name = 'my_bookings.html'
     model = LessonBooking
@@ -134,7 +136,7 @@ class MyBookings(LoginRequiredMixin, generic.ListView):
         return context
 
 
-class DeleteBooking(LoginRequiredMixin, View):
+class DeleteBooking(LoginRequiredMixin, DeleteView):
     """
     This view is used to confirm the deletion of a booking or throw an error.
     """
@@ -164,7 +166,7 @@ class DeleteBooking(LoginRequiredMixin, View):
             return redirect('my_bookings')
 
 
-class UpdateBooking(LoginRequiredMixin, View):
+class UpdateBooking(LoginRequiredMixin, UpdateView):
     """
     This view is used to update the booking of a lesson.
     """
