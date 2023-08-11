@@ -16,11 +16,13 @@ from django.core.exceptions import ValidationError
 from equestrian import settings
 
 
+# Home Page View
 class Home(TemplateView):
     """ This view is used to display the home page """
     template_name = 'index.html'
 
 
+# About Page View
 class About(TemplateView):
     """ This view is used to display the about page,
     and gets the Google Maps API key from Settings.py that gets it from env.py.
@@ -34,6 +36,7 @@ class About(TemplateView):
         return context
 
 
+# Account Details View
 class AccountDetails(LoginRequiredMixin, TemplateView):
     def get(self, request):
         return render(request, 'details.html', {'user': request.user})
@@ -67,6 +70,7 @@ class AccountDetails(LoginRequiredMixin, TemplateView):
         return redirect('account_details')
 
 
+# Contact Page View
 class Contact(FormView):
     """ This view is used to display the Contact page """
     template_name = 'contact.html'
@@ -84,6 +88,7 @@ class Contact(FormView):
         return super().form_valid(form)
 
 
+# Create Lesson Booking View
 class CreateLessonBooking(LoginRequiredMixin, TemplateView):
     """ This view is used to display the booking page """
     template_name = 'create_booking.html'
@@ -104,6 +109,7 @@ class CreateLessonBooking(LoginRequiredMixin, TemplateView):
         return render(request, self.template_name, {'form': form})
 
 
+# User's Booked Lessons View
 class MyBookings(LoginRequiredMixin, ListView):
     """ This view is used to display the users booked lessons """
     template_name = 'my_bookings.html'
@@ -136,6 +142,7 @@ class MyBookings(LoginRequiredMixin, ListView):
         return context
 
 
+# Delete Booking View
 class DeleteBooking(LoginRequiredMixin, DeleteView):
     """
     This view is used to confirm the deletion of a booking or throw an error.
@@ -166,6 +173,7 @@ class DeleteBooking(LoginRequiredMixin, DeleteView):
             return redirect('my_bookings')
 
 
+# Update Booking View
 class UpdateBooking(LoginRequiredMixin, UpdateView):
     """
     This view is used to update the booking of a lesson.
