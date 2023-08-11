@@ -18,15 +18,15 @@ from equestrian import settings
 
 # Home Page View
 class Home(TemplateView):
-    """ This view is used to display the home page """
+    """ Display the home page """
     template_name = 'index.html'
 
 
 # About Page View
 class About(TemplateView):
-    """ This view is used to display the about page,
-    and gets the Google Maps API key from Settings.py that gets it from env.py.
-    This way keeping it safe and not published.
+    """
+    Display the about page.
+    Fetch the Google Maps API Key from Settings.py, obtained from env.py.
     """
     template_name = 'about.html'
 
@@ -38,6 +38,9 @@ class About(TemplateView):
 
 # Account Details View
 class AccountDetails(LoginRequiredMixin, TemplateView):
+    """
+    Display User account details and allow for updates.
+    """
     def get(self, request):
         return render(request, 'details.html', {'user': request.user})
 
