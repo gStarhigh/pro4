@@ -186,7 +186,7 @@ class DeleteBooking(LoginRequiredMixin, DeleteView):
 # Update Booking View
 class UpdateBooking(LoginRequiredMixin, UpdateView):
     """
-    This view is used to update the booking of a lesson.
+    Update a booked lessons details.
     """
     template_name = 'update_booking.html'
 
