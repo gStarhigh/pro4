@@ -131,4 +131,9 @@
 <div class="map-container">
     <div id="map" class="about-img" data-api-key="{{ api_key }}"></div>
 </div>
+
+<!-- Google Maps scripts -->
+<script src="{% static 'js/googleMaps.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&callback=initMap">
+</script>
 {% endblock %}
