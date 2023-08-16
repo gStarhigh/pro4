@@ -104,6 +104,9 @@ a {
     min-height: 380px;
 }
 
+.horse-logo {
+    height: 5vh;
+}
 
 /* Login page */
 .login-cont {
