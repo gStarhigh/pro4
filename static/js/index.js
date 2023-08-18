@@ -1,3 +1,4 @@
+// Code below from Code Institutes Walkthrough project
 setTimeout(function () {
     let messages = document.getElementById('messages');
     if (messages) {
