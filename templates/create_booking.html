@@ -5,11 +5,11 @@
 {% block head_title %}{% trans "Create Booking" %}{% endblock %}
 
 {% block content %}
+<!-- Create booking page which is only being loaded if the user is authenticated -->
 <div>
     <div class="container create-cont">
         <div class="card mb-4 mt-3">
             <div class="card-body">
-                <!--Create booking page which is only being loaded if the user is authenticated-->
                 {% if user.is_authenticated %}
                 <h3 class="login-title">Book your lesson here</h3>
                 <hr class="home-break">
