@@ -8,6 +8,8 @@
     --nav-txt-color: #3c153b;
     --site-bgr-color: #88ab75;
     --cont-bgr-color: rgb(255, 255, 255);
+    --hero-div-color: #D1DAB0;
+    --info-div-color: #E2F9B8;
 }
 
 body,
@@ -68,7 +70,7 @@ a {
 }
 
 .hero-info-div {
-    background-color: #D1DAB0;
+    background-color: var(--hero-div-color);
     border-radius: 20px;
 }
 
@@ -100,7 +102,7 @@ a {
     border-radius: 10px;
     padding: 5px;
     background-clip: padding-box;
-    background-color: #E2F9B8;
+    background-color: var(--info-div-color);
     min-height: 380px;
 }
 
