@@ -94,7 +94,7 @@ class LessonBookingForm(forms.ModelForm):
 
 class DeleteBooking(forms.Form):
     """
-    Form for deletetion of a booking    
+    Form for deletetion of a booking
     """
     confirmation = forms.BooleanField(
         required=True,
