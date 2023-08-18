@@ -80,7 +80,7 @@ class Contact(FormView):
     """
     template_name = 'contact.html'
     form_class = ContactForm
-    success_url = reverse_lazy('Home')
+    success_url = reverse_lazy('home')
 
     def get_form_kwargs(self):
         kwargs = super().get_form_kwargs()

@@ -24,7 +24,7 @@
                 <label for="date_joined">Account Created:</label>
                 <input type="text" id="date_joined" value="{{ user.date_joined|date:'Y-m-d H:i:s' }}" readonly>
                 <div class="btns">
-                    <a href="{% url 'Home' %}" class="btn btn-danger btn-signup btn-sm">Cancel</a>
+                    <a href="{% url 'home' %}" class="btn btn-danger btn-signup btn-sm">Cancel</a>
                     <button type="submit" class="btn btn-success btn-signup btn-sm">Save Changes</button>
                 </div>
             </form>

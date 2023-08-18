@@ -20,7 +20,7 @@ from bookings import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path('', views.Home.as_view(), name='Home'),
+    path('', views.Home.as_view(), name='home'),
     path('accounts/', include('allauth.urls')),
     path('book_lesson/', views.CreateLessonBooking.as_view(),
          name='CreateLessonBooking'),
