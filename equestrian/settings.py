@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'equestrian.wsgi.application'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_EMAIL_REQUIRED = True
 
-
+# Gets Database URL from ENV.py
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
