@@ -16,8 +16,15 @@ function sendMail() {
         "no_participants": noParticipants,
         "focus_lesson": focus,
     };
+    const bookingDate = new Date(lessonDate);
+    const dayOfWeek = bookingDate.getDay(); // 0 = Sunday, 1, 6 = Saturday
 
-    emailjs.send(serviceID, templateID, templateParams);
+    if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+        // LessonDate is not a Saturday or Sunday
+        emailjs.send(serviceID, templateID, templateParams);
+    } else {
+        // LessonDate is a saturday or sunday, do nothing
+    }
 }
 
 // Function for sending email from the contact form.
