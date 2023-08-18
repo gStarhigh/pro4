@@ -8,8 +8,10 @@ from datetime import time
 from django.db.models import Sum
 
 
-# Creates a form for booking a lesson
 class LessonBookingForm(forms.ModelForm):
+    """
+    Creates a form for booking a lesson
+    """
     NO_PARTICIPANTS_CHOICES = [(i, str(i)) for i in range(1, 4)]
 
     class Meta:
@@ -34,20 +36,26 @@ class LessonBookingForm(forms.ModelForm):
     no_participants = forms.ChoiceField(choices=NO_PARTICIPANTS_CHOICES,
                                         widget=forms.Select)
 
-    # Validates the lessondate
     def clean_lesson_date(self):
+        """
+        Validates the lessondate
+        """
         lesson_date = self.cleaned_data['lesson_date']
         validate_booking_date(lesson_date)
         return lesson_date
 
-    # Validates the lessontime
     def clean_lesson_time(self):
+        """
+        Validates the lessontime
+        """
         lesson_time = self.cleaned_data['lesson_time']
         validate_booking_time(lesson_time)
         return lesson_time
 
-    # Validates the entire form
     def clean(self):
+        """
+        Validates the entire form
+        """
         cleaned_data = super().clean()
         lesson_date = cleaned_data.get('lesson_date')
         lesson_time = cleaned_data.get('lesson_time')
@@ -85,12 +93,18 @@ class LessonBookingForm(forms.ModelForm):
 
 
 class DeleteBooking(forms.Form):
+    """
+    Form for deletetion of a booking    
+    """
     confirmation = forms.BooleanField(
         required=True,
         widget=forms.HiddenInput(attrs={"value": True})
     )
 
     def clean(self):
+        """
+        Validates the deletion
+        """
         cleaned_data = super().clean()
         confirmation = cleaned_data.get('confirmation')
 
