@@ -311,31 +311,6 @@ a {
     margin: 0;
 }
 
-/* Footer */
-.footer-container {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.social-links {
-    text-align: center;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline;
-}
-
-.social-links i {
-    font-size: 150%;
-    padding: 0 20px;
-}
-
-.social-links i:hover {
-    font-size: 180%;
-}
-
 /* About us page */
 .about-section {
     margin-top: 50px;
@@ -404,6 +379,30 @@ input {
     border: 5px;
 }
 
+/* Footer */
+.footer-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links {
+    text-align: center;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links i {
+    font-size: 150%;
+    padding: 0 20px;
+}
+
+.social-links i:hover {
+    font-size: 180%;
+}
 
 /* Media queries */
 
