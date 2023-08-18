@@ -108,7 +108,7 @@
         </div>
     </div>
 
-    <!--Main content-->
+    <!--Main content being rendered from other templates-->
     <main>
         {% block content %}
         {% endblock content %}
@@ -128,6 +128,7 @@
                 <a href="{% url 'contact' %}" class="nav-link px-2">Contact</a>
             </li>
             {% if user.is_authenticated %}
+            <!--Displays if user is authenticated-->
             <li class="nav-item">
                 <a href="{% url 'my_bookings' %}" class="nav-link px-2">My Bookings</a>
             </li>
@@ -135,6 +136,7 @@
                 <a href="{% url 'account_logout' %}" class="nav-link px-2">Logout</a>
             </li>
             {% else %}
+            <!--Displays if user is not authenticated-->
             <li class="nav-item">
                 <a href="{% url 'account_signup' %}" class="nav-link px-2">Register</a>
             </li>
@@ -144,6 +146,7 @@
             {% endif %}
         </ul>
         <div class="container footer-container">
+            <!--Social links, all opens in external tabs-->
             <ul class="social-links">
                 <li>
                     <a href="https://www.facebook.com/profile.php?id=100057514326453" target="_blank" rel="noopener"
