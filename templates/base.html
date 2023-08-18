@@ -34,6 +34,7 @@
 </head>
 
 <body>
+    <!--Checks if user is authenticated, if not, displays a message-->
     {% if user.is_authenticated %}
     {% else %}
     <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
@@ -47,8 +48,7 @@
         <div class="container-fluid">
             <a class="navbar-brand navbar-text" href="{% url 'Home' %}"> <span><img class="horse-logo"
                         src="https://res.cloudinary.com/draygqe7t/image/upload/v1692179449/horse-logo_w2avku.png"
-                        alt="A Horse"></span>Starhögs
-                Equestrian</a>
+                        alt="A Horse"></span>Starhögs Equestrian</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -59,6 +59,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'Home' %}">Home</a>
                     </li>
+                    <!--Checks if user is authenticated, displays different nav elements depending on authenticity-->
                     {% if user.is_authenticated %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -73,6 +74,7 @@
                         </ul>
                     </li>
                     {% else %}
+                    <!--Displays if user is not authenticated-->
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
@@ -80,6 +82,7 @@
                         <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
+                    <!--Displays if user is authenticated-->
                     <li class=" nav-item">
                         <a class="nav-link" href="{% url 'about' %}">About</a>
                     </li>
