@@ -1,3 +1,4 @@
+// Renders Google Maps through an API to the About page.
 const apiKey = document.getElementById("map").getAttribute("data-api-key");
 
 function initMap() {
