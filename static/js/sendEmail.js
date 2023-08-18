@@ -28,12 +28,10 @@ function sendMail() {
         return false; // Stop form submission
     } else if (dayOfWeek === 0 || dayOfWeek === 6) {
         // LessonDate is a Saturday or Sunday
-        console.log("Not Sending email...");
         return false; // Stop form submission
     } else {
         // LessonDate is not a Saturday or Sunday
         emailjs.send(serviceID, templateID, templateParams);
-        console.log("Sending email...");
     }
 }
 
