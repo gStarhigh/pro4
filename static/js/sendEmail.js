@@ -6,6 +6,7 @@ function sendMail() {
     const lessonTime = document.querySelector('[name="lesson_time"]').value;
     const noParticipants = document.querySelector('[name="no_participants"]').value;
     const focus = document.querySelector('[name="focus_lesson"]').value;
+    const termsChecked = document.querySelector('[name="terms_checked"]').checked;
     const serviceID = "service_bp6z8w3";
     const templateID = "booking_created";
     const templateParams = {
@@ -16,14 +17,23 @@ function sendMail() {
         "no_participants": noParticipants,
         "focus_lesson": focus,
     };
+
+    // Lesson date validation
     const bookingDate = new Date(lessonDate);
     const dayOfWeek = bookingDate.getDay(); // 0 = Sunday, 1, 6 = Saturday
 
-    if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+    // Terms checked validation
+    if (!termsChecked) {
+        alert("Please check the terms and conditions before submitting.");
+        return false; // Stop form submission
+    } else if (dayOfWeek === 0 || dayOfWeek === 6) {
+        // LessonDate is a Saturday or Sunday
+        console.log("Not Sending email...");
+        return false; // Stop form submission
+    } else {
         // LessonDate is not a Saturday or Sunday
         emailjs.send(serviceID, templateID, templateParams);
-    } else {
-        // LessonDate is a saturday or sunday, do nothing
+        console.log("Sending email...");
     }
 }
 
