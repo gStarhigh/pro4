@@ -47,6 +47,10 @@ class LessonBookingForm(forms.ModelForm):
         lesson_date = cleaned_data.get('lesson_date')
         lesson_time = cleaned_data.get('lesson_time')
         no_participants_str = cleaned_data.get('no_participants')
+        terms_checked = cleaned_data.get('terms_checked')
+
+        if not terms_checked:
+            raise forms.ValidationError("Your must agree to the terms")
 
         if lesson_date and lesson_time and no_participants_str:
             no_participants = int(no_participants_str)
