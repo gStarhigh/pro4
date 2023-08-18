@@ -1,7 +1,6 @@
 from django.core.exceptions import ValidationError
 from django.utils import timezone
-from datetime import time
-from datetime import timedelta
+from datetime import time, timedelta
 from django import forms
 
 
