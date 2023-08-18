@@ -28,6 +28,7 @@ function sendMail() {
         return false; // Stop form submission
     } else if (dayOfWeek === 0 || dayOfWeek === 6) {
         // LessonDate is a Saturday or Sunday
+        alert("Only Monday to Friday can be booked.");
         return false; // Stop form submission
     } else {
         // LessonDate is not a Saturday or Sunday
