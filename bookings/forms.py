@@ -8,6 +8,7 @@ from datetime import time
 from django.db.models import Sum
 
 
+# Creates a form for booking a lesson
 class LessonBookingForm(forms.ModelForm):
     NO_PARTICIPANTS_CHOICES = [(i, str(i)) for i in range(1, 4)]
 
@@ -29,19 +30,23 @@ class LessonBookingForm(forms.ModelForm):
             'terms_checked': 'I have read and understood the terms',
             'level_ekipage': 'Choose your level:',
         }
+    # Choose the number of participants
     no_participants = forms.ChoiceField(choices=NO_PARTICIPANTS_CHOICES,
                                         widget=forms.Select)
 
+    # Validates the lessondate
     def clean_lesson_date(self):
         lesson_date = self.cleaned_data['lesson_date']
         validate_booking_date(lesson_date)
         return lesson_date
 
+    # Validates the lessontime
     def clean_lesson_time(self):
         lesson_time = self.cleaned_data['lesson_time']
         validate_booking_time(lesson_time)
         return lesson_time
 
+    # Validates the entire form
     def clean(self):
         cleaned_data = super().clean()
         lesson_date = cleaned_data.get('lesson_date')
@@ -49,9 +54,11 @@ class LessonBookingForm(forms.ModelForm):
         no_participants_str = cleaned_data.get('no_participants')
         terms_checked = cleaned_data.get('terms_checked')
 
+        # Checks that the user has checked the terms box
         if not terms_checked:
             raise forms.ValidationError("Your must agree to the terms")
 
+        # Checks that all fields are correct
         if lesson_date and lesson_time and no_participants_str:
             no_participants = int(no_participants_str)
             booking_datetime = timezone.make_aware(
@@ -70,6 +77,7 @@ class LessonBookingForm(forms.ModelForm):
 
             available_slots = 3 - total_participants
 
+            # Checks so there is enough slots for the booking
             if available_slots < no_participants:
                 raise forms.ValidationError("Booking is full for the "
                                             "selected date and time.")
