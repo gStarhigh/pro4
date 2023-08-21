@@ -96,8 +96,27 @@ The structure of the website is divided between authenticated user and not authe
 - The Contact page is visibile for all users and displays a contact form. If the user is authenticated, the Username and Email will be pre-populated. If the user is NOT authenticated, the user will have to provide that information before submitting.
 When the form is valid and sent, an email is sent to both the admin and the user.
 - The About page displays images and information of the business. There is also an embedded video and an Google Maps API that displays the location.
+- My Bookings page is only accessible if the user is logged in and displays all bookings made by the user. If there is no bookings made, an message will be displayed: "You have no bookings yet". The bookings are sorted by date. As a User you can filter your bookings by three variables: 
+    
+    All: Displays all bookings, regardless of date or status.
 
+    Upcoming: Only displays "Approved" lessons that has not passed.
 
+    Completed: Only displayes "Approved" lessons that has passed.
+- The Book a lessons page is only accessible if the user is logged in. It displays the form neccessary to complete a booking. Here the user will be asked to enter the following information:
+    
+    Focus for the lesson
+    
+    Date: You are only able to book Monday to Friday.
+
+    Time: You are only able to book the following times:
+    18:00,19:00,20:00,21:00.
+
+    Number of participants: Up to 3 people can share a lesson time.
+
+    Level of the ekipage: Your level of dressage skills, chosen from a dropdown list.
+
+    Terms of booking: A checkbox that must be checked. Terms can be read by pressing the link "Read terms here", that will open a modal.
 ---
 ## General features
 
