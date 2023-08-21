@@ -428,4 +428,5 @@ All images belong to us except the favicon.
 
 - Favicon Credit: https://favicon.io/emoji-favicons/horse
 
+- Emoji in Readme credit: https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 ---
