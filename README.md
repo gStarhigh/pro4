@@ -143,11 +143,43 @@ The project uses the PostgreSQL relational database for storing the data. It was
 
 ---
 ### Code Validation
+
+#### HTML
+All Python files has passed through validation and shows no errors:
+<details>
+<summary></summary>
+<img src="">
+</details>
+
 #### CSS
-All CSS has passed through validation and shows no errors:
+All CSS files has passed through validation and shows no errors:
 <details>
 <summary>CSS Validation</summary>
 <img src="documentation/validations/css/style_css_validation.PNG">
+</details>
+
+#### JavaScript
+All Javascript files has passed through validation and shows no errors:
+<details>
+<summary>googleMaps.js</summary>
+<img src="">
+</details>
+
+<details>
+<summary>index.js</summary>
+<img src="">
+</details>
+
+<details>
+<summary>sendEmail.js</summary>
+<img src="">
+</details>
+
+#### Python
+All Python files has passed through validation and shows no errors:
+<details>
+<summary></summary>
+<img src="">
 </details>
 ---
 
