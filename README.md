@@ -147,8 +147,58 @@ The project uses the PostgreSQL relational database for storing the data. It was
 #### HTML
 All HTML files has passed through validation and shows no errors:
 <details>
-<summary></summary>
-<img src="">
+<summary>index.html</summary>
+<img src="documentation/validations/html/index_html_validation.PNG">
+</details>
+
+<details>
+<summary>create_booking.html</summary>
+<img src="documentation/validations/html/create_booking_html_validation.PNG">
+</details>
+
+<details>
+<summary>404.html</summary>
+<img src="documentation/validations/html/404_validation.PNG">
+</details>
+
+<details>
+<summary>about.html</summary>
+<img src="documentation/validations/html/about_validation.PNG">
+</details>
+
+<details>
+<summary>delete_booking.html</summary>
+<img src="documentation/validations/html/delete_booking_html_validation.PNG">
+</details>
+
+<details>
+<summary>details.html</summary>
+<img src="documentation/validations/html/my_account_html_validation.PNG">
+</details>
+
+<details>
+<summary>my_bookings.html</summary>
+<img src="documentation/validations/html/my_bookings_html_validation.PNG">
+</details>
+
+<details>
+<summary>update_booking.html</summary>
+<img src="documentation/validations/html/update_booking_html_validation.PNG">
+</details>
+
+<details>
+<summary>logout.html</summary>
+<img src="documentation/validations/html/logout_html_validation.PNG">
+</details>
+
+<details>
+<summary>login.html</summary>
+<img src="documentation/validations/html/signin_html_validation.PNG">
+</details>
+
+<details>
+<summary>signup.html</summary>
+<img src="documentation/validations/html/register_html_validation.PNG">
 </details>
 
 #### CSS
