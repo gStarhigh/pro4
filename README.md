@@ -385,7 +385,7 @@ Solution: Unknown
 
 ### Sample printscreens of the finished project below:
 
-(All images can be found [Here]())
+(All images can be found [Here](https://github.com/gStarhigh/pro4/tree/main/documentation))
 
 <details>
 <summary>Printscreen 1</summary>
