@@ -55,6 +55,9 @@ The purpose of the site is to provide an easy understandable website with a simp
 No flashy colors were used, but the colors were calm and pleasing to interact with.
 A favicon were used to make the website look better in the tab-bar.
 
+### Colors used:
+
+
 ## Project Goals
 The project goals was to create a website using the Django Framework in Python along with HTML CSS and Javascript. A user should be able to create a booking for their dressage lesson at available times and should be able to be up to 3 participants per lesson. 
 
