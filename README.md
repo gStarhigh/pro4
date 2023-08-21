@@ -228,63 +228,63 @@ All Javascript files has passed through validation and shows no errors:
 #### Python
 All Python files has passed through validation and shows no errors:
 <details>
-<summary></summary>
-<img src="">
+<summary>admin.py</summary>
+<img src="documentation/validations/python/admin_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>apps.py</summary>
+<img src="documentation/validations/python/apps_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>asgi.py</summary>
+<img src="documentation/validations/python/asgi_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>env.py</summary>
+<img src="documentation/validations/python/env_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>forms.py</summary>
+<img src="documentation/validations/python/forms_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>manage.py</summary>
+<img src="documentation/validations/python/manage_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>models.py</summary>
+<img src="documentation/validations/python/models_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>settings.py</summary>
+<img src="documentation/validations/python/settings_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>urls.py</summary>
+<img src="documentation/validations/python/urls_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>validation.py</summary>
+<img src="documentation/validations/python/validation_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>views.py</summary>
+<img src="documentation/validations/python/views_validation.PNG">
 </details>
 
 <details>
-<summary></summary>
-<img src="">
+<summary>wsgi.py</summary>
+<img src="documentation/validations/python/wsgi_validation.PNG">
 </details>
 ---
 
