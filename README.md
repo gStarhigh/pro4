@@ -123,6 +123,7 @@ When the form is valid and sent, an email is sent to both the admin and the user
 - My account page is only accessible if the user is logged in and lets the user update the firstname, Lastname and email adress. There is also a readonly field containing the date and time the user created the account. 
 
 #### Here is an image of the structure I used for this project.
+The flowchart was made using [Lucidchart](https://lucid.co/).
 ![Image of the structure:](/documentation/images/structure.PNG)
 
 
@@ -132,6 +133,8 @@ When the form is valid and sent, an email is sent to both the admin and the user
 #### Database
 
 The project uses the PostgreSQL relational database for storing the data. It was setup using [ElephantSQL](https://www.elephantsql.com/). Read more about Elephant SQL in the [Deployment](#deployment-1) section.
+
+The schema was made using [Lucidchart](https://lucid.co/).
 ![Schema:](/documentation/images/pro4_db_schema.PNG)
 
 ---
