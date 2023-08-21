@@ -51,6 +51,9 @@ Link to the application: [Click Here!](https://star-pro4-3dc81848625c.herokuapp.
 - ## [Credits](#credits-1)
 ---
 ## UX
+The purpose of the site is to provide an easy understandable website with a simple and easy way for the user to create a booking. The site should be pleasing to the eye and to make a booking should be very simple.
+No flashy colors were used, but the colors were calm and pleasing to interact with.
+A favicon were used to make the website look better in the tab-bar.
 
 ## Project Goals
 
