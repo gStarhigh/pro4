@@ -117,6 +117,13 @@ When the form is valid and sent, an email is sent to both the admin and the user
     Level of the ekipage: Your level of dressage skills, chosen from a dropdown list.
 
     Terms of booking: A checkbox that must be checked. Terms can be read by pressing the link "Read terms here", that will open a modal.
+
+- My account page is only accessible if the user is logged in and lets the user update the firstname, Lastname and email adress. There is also a readonly field containing the date and time the user created the account. 
+
+#### Here is an image of the structure I used for this project.
+![Image of the structure:](/documentation/images/structure.PNG)
+
+
 ---
 ## General features
 
