@@ -212,17 +212,17 @@ All CSS files has passed through validation and shows no errors:
 All Javascript files has passed through validation and shows no errors:
 <details>
 <summary>googleMaps.js</summary>
-<img src="">
+<img src="documentation/validations/js/google_maps_js_validation.PNG">
 </details>
 
 <details>
 <summary>index.js</summary>
-<img src="">
+<img src="documentation/validations/js/index_js_validation.PNG">
 </details>
 
 <details>
 <summary>sendEmail.js</summary>
-<img src="">
+<img src="documentation/validations/js/send_email_validation.PNG">
 </details>
 
 #### Python
