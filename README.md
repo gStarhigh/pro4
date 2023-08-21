@@ -64,6 +64,17 @@ A user should not be able to create or edit any booking without being authorized
 ---
 # User Stories
 
+| **EPIC** | **ID #** | **User Story** | **Github project** |
+|-------------|------------|---------------------|---------------------|
+| **User Authorization** |
+|  | 1 | As a Site User I can register for an account so that I can book, update and delete my bookings | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22User+Authorization%22&pane=issue&itemId=33280441) |
+|  | 2 | As a Site User I can easily see my login status so that I know if I'm logged in or not to the site. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22User+Authorization%22&pane=issue&itemId=33281113) |
+|  | 14 | As a User I can see my account information so that I can add first name, lastname, adress, update email adress. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22User+Authorization%22&pane=issue&itemId=34983028) |
+| **Lesson Booking** |
+|  | 3 | As a logged in user I can see all my bookings so that I know when I my bookings will take place | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22Lesson+Booking%22&pane=issue&itemId=33281896) |
+
+
+
 ---
 ## Flowchart
 
