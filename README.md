@@ -124,6 +124,14 @@ When the form is valid and sent, an email is sent to both the admin and the user
 ![Image of the structure:](/documentation/images/structure.PNG)
 
 
+#### Wireframes
+
+
+#### Database
+
+The project uses the PostgreSQL relational database for storing the data. It was setup using [ElephantSQL](https://www.elephantsql.com/). Read more about Elephant SQL in the [Deployment](#deployment-1) section.
+![Schema:](/documentation/images/pro4_db_schema.PNG)
+
 ---
 ## General features
 
