@@ -137,4 +137,17 @@ Creating the Heroku app
 
 - I want to thank my mentor Jack at Code Institute for continuing to push me in my projects and for his continued support. 
 
+- I want to thank my wife Maria whom supplied all necessary information about riding, the images and support during this project.
+All images belong to us except the favicon.
+
+- Code institute for the walkthrough projects that taught me django to be able to complete this project.
+
+- Django Allauth docs: https://django-allauth.readthedocs.io/en/latest/configuration.html
+
+- EmailJS docs: https://www.emailjs.com/docs/sdk/send-form/
+
+- Class based view docs: https://ccbv.co.uk/
+
+- Favicon Credit: https://favicon.io/emoji-favicons/horse
+
 ---
