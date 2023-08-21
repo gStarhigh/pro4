@@ -56,13 +56,13 @@ No flashy colors were used, but the colors were calm and pleasing to interact wi
 A favicon were used to make the website look better in the tab-bar.
 
 ## Project Goals
+The project goals was to create a website using the Django Framework in Python along with HTML CSS and Javascript. A user should be able to create a booking for their dressage lesson at available times and should be able to be up to 3 participants per lesson. 
 
+A Database was set up to handle all data and to ensure correct booking and tracking was applied. 
+
+A user should not be able to create or edit any booking without being authorized on the site. Contacting the admin does not require a login status.
 ---
 # User Stories
-### As a first time user... :
-
-### As a returning user:
-
 
 ---
 ## Flowchart
