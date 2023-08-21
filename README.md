@@ -81,6 +81,8 @@ A user should not be able to create or edit any booking without being authorized
 |  | 9 | As a User I can read about the company so that I know who is running it and who the teacher is. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22Home%2FAbout+pages%22&pane=issue&itemId=33286672) |
 | **User Contact Abilities** |
 |  | 10 | As a user I can contact the teacher so that I can get answers to my questions. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22User+Contact+Abilities%22&pane=issue&itemId=33286913) |
+| **Admin** |
+|  | 15 | As a Admin I can approve lessons so that the user can see that it has been approved. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?pane=issue&itemId=36399686) |
 | **NOT IMPLEMENTED!** |
 |  | 11 | As a Logger in User I can book a place for the summer pasture so that I have a place for my horse next summer. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?pane=issue&itemId=33312687) |
 |  | 7 | As a Logged in User I will get an email confirmation so that I know that my lesson has been confirmed. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?pane=issue&itemId=33284416) |
