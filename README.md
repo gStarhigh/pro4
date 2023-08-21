@@ -78,7 +78,9 @@ A user should not be able to create or edit any booking without being authorized
 |  | 13 | As a User I can filter my bookings so that I easily can see which has passed and which are upcoming. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22Lesson+Booking%22&pane=issue&itemId=34977495) |
 | **Home/ About pages** |
 |  | 8 | As a user I can immediately understand the purpose of the site so that I can easily decide if it meets my needs. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22Home%2FAbout+pages%22&pane=issue&itemId=33286328) |
-|  | 8 | As a User I can read about the company so that I know who is running it and who the teacher is. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22Home%2FAbout+pages%22&pane=issue&itemId=33286672) |
+|  | 9 | As a User I can read about the company so that I know who is running it and who the teacher is. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22Home%2FAbout+pages%22&pane=issue&itemId=33286672) |
+| **User Contact Abilities** |
+|  | 10 | As a user I can contact the teacher so that I can get answers to my questions. | [Link](https://github.com/users/gStarhigh/projects/4/views/1?filterQuery=label%3A%22User+Contact+Abilities%22&pane=issue&itemId=33286913) |
 
 ---
 ## Flowchart
