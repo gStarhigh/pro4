@@ -231,6 +231,61 @@ All Python files has passed through validation and shows no errors:
 <summary></summary>
 <img src="">
 </details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
+
+<details>
+<summary></summary>
+<img src="">
+</details>
 ---
 
 ## Testing User Stories
