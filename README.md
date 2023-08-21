@@ -310,8 +310,25 @@ All Python files has passed through validation and shows no errors:
 ---
 
 ## Testing User Stories
+Placeholder
 
+1. Placeholder
 
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | Placeholder | Placeholder |
+| Placeholder | Placeholder | Placeholder | Placeholder | Placeholder |
+| Placeholder | Placeholder | Placeholder | Placeholder | Placeholder |
+| Placeholder | Placeholder | Placeholder | Placeholder | Placeholder |
+
+2. Placeholder #2
+
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | Placeholder | Placeholder |
+| Placeholder | Placeholder | Placeholder | Placeholder | Placeholder |
+| Placeholder | Placeholder | Placeholder | Placeholder | Placeholder |
+| Placeholder | Placeholder | Placeholder | Placeholder | Placeholder |
 
 ---
 ## Future improvements
