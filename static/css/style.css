@@ -107,7 +107,8 @@ a {
 }
 
 .horse-logo {
-    height: 5vh;
+    max-height: 5vh;
+    max-width: 5vh;
 }
 
 /* Login page */
