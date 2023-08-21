@@ -145,7 +145,7 @@ The project uses the PostgreSQL relational database for storing the data. It was
 ### Code Validation
 
 #### HTML
-All Python files has passed through validation and shows no errors:
+All HTML files has passed through validation and shows no errors:
 <details>
 <summary></summary>
 <img src="">
