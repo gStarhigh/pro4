@@ -363,7 +363,13 @@ Issue: To the right of "remember me" and to the left of the checkbox, there is a
 Solution: Unknown
 
 ---
-## Libraries and Software
+## Languages, Libraries and Software
+### Main Languages:
+- HTML5
+- CSS3
+- Python
+- Javascript
+- Django
 
 ### Libraries used:
 
@@ -372,7 +378,7 @@ Solution: Unknown
 - Gitpod - Used for version control and to commit and push code to github.
 - Github - Github is used to store the projects code after being pushed from gitpod. 
 - Heroku - Used to deploy the project online.
-
+- PostgreSQL(ElephantSQL)
 ---
 ## Final Result
 - The final deployed project can be found [here.](https://star-pro4-3dc81848625c.herokuapp.com/)
