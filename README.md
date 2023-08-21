@@ -344,27 +344,12 @@ Placeholder
 
 ---
 ## Bugs
-Known Bugs:
 
-Issue: If you book a lesson where the lesson is full, emailJS will still send out an email.
-
-Solution: I believe an AJAX request to the server would solve this - Future implementation.
-
----
-About page:
-
-Issue:
-Error in console:
-"Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'."
-
-Solution: 
-What I've understood this has something to do with Google's end. It has no affect on my site and everything works as it should. If i delete my iframe, the error disappears. I have found no solution to this, and as it does not affect the functionality, the iframe is left in the project.
-
----
-Login page:
-Issue: To the right of "remember me" and to the left of the checkbox, there is a symbol which I cannot seem to remove. 
-
-Solution: Unknown
+| **Bug** | **Solution** |
+|-------------|------------|
+| If you book a lesson where the lesson is full, emailJS will still send out an email. | I believe an AJAX request to the server would solve this - Future implementation. | 
+| Error in console: "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'." | What I've understood this has something to do with Google's end. It has no affect on my site and everything works as it should. If i delete my iframe, the error disappears. I have found no solution to this, and as it does not affect the functionality, the iframe is left in the project. | 
+| To the right of "remember me" and to the left of the checkbox, there is a symbol which I cannot seem to remove.  | Unknown. I have tried all I could think of but could not get it to disappear. Perhaps usage of crispy forms would be an idea. | 
 
 ---
 ## Languages, Libraries and Software
