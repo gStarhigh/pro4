@@ -327,7 +327,7 @@ Placeholder
 
 2. Placeholder #2
 
-| **Feature** | **Action** | **Expected result** | **Actual Result** |
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
