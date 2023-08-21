@@ -140,6 +140,24 @@ The project uses the PostgreSQL relational database for storing the data. It was
 --- 
 ## Testing
 
+#### Lighthouse result
+A good result was presented on the desktop test.
+    <details>
+    <summary>Desktop</summary>
+    <img src="documentation/lighthouse/desktop.PNG">
+    </details>
+
+
+On Mobile the result was not as good as on desktop. It seems that the boostrap cdn along with the emailjs cdn causes the page to render slower on mobile.
+    <details>
+    <summary>Mobile</summary>
+    <img src="documentation/lighthouse/mobile.PNG">
+    </details>
+    <details>
+    <summary>Mobile Issues</summary>
+    <img src="documentation/lighthouse/issues_mobile.PNG">
+    </details>
+
 
 ---
 ### Code Validation
