@@ -311,6 +311,7 @@ All Python files has passed through validation and shows no errors:
 <summary>wsgi.py</summary>
 <img src="documentation/validations/python/wsgi_validation.PNG">
 </details>
+
 ---
 
 ## Testing User Stories
