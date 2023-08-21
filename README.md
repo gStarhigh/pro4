@@ -333,6 +333,11 @@ Placeholder
 ---
 ## Future improvements
 
+1. Having 2 databases, one for local testing and one for the deployed version. This would not flood the deployed versions database with test data.
+
+2. 
+
+
 ---
 ## Bugs
 Known Bugs:
