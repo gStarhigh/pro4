@@ -143,8 +143,12 @@ The project uses the PostgreSQL relational database for storing the data. It was
 
 ---
 ### Code Validation
-
-
+#### CSS
+All CSS has passed through validation and shows no errors:
+<details>
+<summary>CSS Validation</summary>
+<img src="documentation/validations/css/style_css_validation.PNG">
+</details>
 ---
 
 ## Testing User Stories
