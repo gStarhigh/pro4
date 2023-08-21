@@ -61,6 +61,7 @@ The project goals was to create a website using the Django Framework in Python a
 A Database was set up to handle all data and to ensure correct booking and tracking was applied. 
 
 A user should not be able to create or edit any booking without being authorized on the site. Contacting the admin does not require a login status.
+
 ---
 # User Stories
 
