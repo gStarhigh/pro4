@@ -1,12 +1,21 @@
 # Django project (Project Portfolio 4) for Code Institute.
 
 ## General information
+Starhögs Equestrian is a website where you can improve your dressage riding skills. The website provides you with the ability to create your own account and add in your personal details, should you wish. After a user has created their account they can now book riding lessons with an instructor. 
 
+The website has full CRUD functionality, which means that a user can:
+- Create a booking.
+- Read/View their booking.
+- Update their booking.
+- Delete their booking.
 
-Link to the application: []()
+The idea for this website was to create something that could help my wife with her real life dressage lesson business and make it easier for her to maintain and have control over her schedule. Although there is more that I want to add to the project, this will be future implementations, which you can read more about further down in this documentation.
 
-Image of the application: ![]()
+Link to the application: [Click Here!](https://star-pro4-3dc81848625c.herokuapp.com/)
 
+![Fullscreen image of the application:](/documentation/images/index_fullsize.png)
+---
+![Phonescreen image of the application:](/documentation/images/index_phonesize.png)
 
 ---
 ## Table of Contents
