@@ -88,6 +88,16 @@ A user should not be able to create or edit any booking without being authorized
 ---
 ## Flowchart
 
+### Structure
+The structure of the website is divided between authenticated user and not authenticated.
+- Register page gives the user the possibility to create an account.
+- Login page gives the user the possibility to login to an existing account.
+- The Home page is visible for all users and displays images and information about the site.
+- The Contact page is visibile for all users and displays a contact form. If the user is authenticated, the Username and Email will be pre-populated. If the user is NOT authenticated, the user will have to provide that information before submitting.
+When the form is valid and sent, an email is sent to both the admin and the user.
+- The About page displays images and information of the business. There is also an embedded video and an Google Maps API that displays the location.
+
+
 ---
 ## General features
 
