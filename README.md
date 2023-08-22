@@ -162,35 +162,57 @@ Of the navigation links there are 3 that are always visible no matter your loggi
 
 If you are not logged in, you will also see Register and Login.
     <details>
-    <summary>Example image desktop</summary>
+    <summary>Navbar example image desktop</summary>
     <img src="documentation/testing/logged-out/navbar_logged_out.PNG">
     </details>
     <details>
-    <summary>Example image mobile</summary>
+    <summary>Navbar example image mobile</summary>
     <img src="documentation/testing/logged-out/navbar_logged_out_mobile.PNG">
     </details>
     <details>
-    <summary>Example image mobile expanded menu</summary>
+    <summary>Navbar example image mobile expanded menu</summary>
     <img src="documentation/testing/logged-out/navbar_expanded_logged_out_mobile.PNG">
     </details>
 
 
 If you are logged in, you will see your Username, with a dropdown option.
     <details>
-    <summary>Example image desktop</summary>
+    <summary>Navbar example image desktop</summary>
     <img src="documentation/testing/logged-in/loggedin_navbar_desktop.PNG">
     </details>
     <details>
-    <summary>Example image desktop expanded dropdown</summary>
+    <summary>Navbar example image desktop expanded dropdown</summary>
     <img src="documentation/testing/logged-in/navbar_expanded_logged_in_desktop.PNG">
     </details>
     <details>
-    <summary>Example image mobile</summary>
+    <summary>Navbar example image mobile</summary>
     <img src="documentation/testing/logged-in/loggedin_navbar_expanded_mobile.PNG">
     </details>
 
+#### Footer
+
+The footer follows the same principle as the navbar, however with different links.
+
+If the user is logged in, they will see the following links: "Home, About, Contact, My Bookings and Logout".
+    <details>
+    <summary>Footer example image desktop</summary>
+    <img src="documentation/testing/logged-in/footer_loggedin_desktop.PNG">
+    </details>
+    <details>
+    <summary>Footer example image mobile</summary>
+    <img src="documentation/testing/logged-in/footer_loggedin_mobile.PNG">
+    </details>
 
 
+If the user is not logged in, they will see the following links: "Home, About, Contact, Register, Login".
+    <details>
+    <summary>Footer example image desktop</summary>
+    <img src="documentation/testing/logged-out/footer_loggedout_desktop.PNG">
+    </details>
+    <details>
+    <summary>Footer example image mobile</summary>
+    <img src="documentation/testing/logged-out/footer_loggedout_mobile.PNG">
+    </details>
 
 
 
