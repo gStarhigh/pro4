@@ -444,15 +444,78 @@ Adding Config Vars
 
 - Step 22: Click on Settings tab, and choose "Reveal Config Vars"
     <details>
-    <summary>Allowed hosts example</summary>
+    <summary>Heroku Navbar</summary>
     <img src="documentation/deployment/heroku_index.PNG">
     </details>
 - Step 23: As key type: DATABASE_URL
-- Step 24: As value: "The link you copied earlier from ElephantSQL.
+- Step 24: As value: "The link you copied earlier from ElephantSQL".
     <details>
-    <summary>Allowed hosts example</summary>
+    <summary>Config Vars Example</summary>
     <img src="documentation/deployment/config_vars.PNG">
     </details>
+
+Creating the env.py file to store all your sensitive information.
+- Step 25: Create a file named "env.py" at the root of your directory.
+- Step 26: At the top of the file type: import os
+
+Adding the database URL:
+- Step 27: os.environ["DATABASE_URL"] = "The link you copied earlier from ElephantSQL"
+
+Adding the Secret Key (either make up your own or use the one in settings.py(Your project CANNOT have been pushed to github if you use the one in settings.py!)):
+- Step 28: os.environ["SECRET_KEY"] = " Secret key goes here "
+
+Add the Secret key to herokus config vars.
+- Step 29: As Key: SECRET_KEY
+- Step 30: As Value: "The secret key you have in env.py"
+
+Settings.py:
+- Step 31: At the top of the file add the following code:
+
+import os
+
+import dj_database_url
+
+if os.path.isfile('env.py'):
+    import env
+
+from pathlib import Path
+
+Find the SECRET_KEY and replace the secret key code with:
+- Step 32: SECRET_KEY = os.environ.get('SECRET_KEY')
+    <details>
+    <summary>Secret Key Image</summary>
+    <img src="documentation/deployment/secret_key_settings.PNG">
+    </details>
+
+- Step 33: Comment out, or delete the following Database code:
+
+DATABASES = {
+
+'default': {
+
+'ENGINE': 'django.db.backends.sqlite3',
+
+'NAME': BASE_DIR / 'db.sqlite3',
+
+}
+
+}
+
+Create the new Database link with the following code:
+- Step 34: 
+
+DATABASES = {
+
+'default':
+
+dj_database_url.parse(os.environ.get("DATABASE_URL"))
+
+}
+
+Now we can save all files and migrate all the changes. Make sure that your project has never been pushed or commited to github with the secret key you now have in your env.py file, if so, make up a new secret key.
+
+- Step 35: In the terminal type: python3 manage.py migrate
+
 
 
 ---
