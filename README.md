@@ -37,6 +37,7 @@ Link to the application: [Click Here!](https://star-pro4-3dc81848625c.herokuapp.
 - ## [Testing](#testing-1)
     - ## [Code Validation](#code-validation-1)
     - ## [Testing User Stories](#testing-user-stories-1)
+    - ## [Manual Testing](#manual-testing-1)
     - ## [Future improvements](#Future-improvements-1)
 - ## [Bugs](#Bugs-1)
 
@@ -618,6 +619,8 @@ Placeholder
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
+
+## Manual Testing
 
 ---
 ## Future improvements
