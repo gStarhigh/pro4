@@ -437,7 +437,23 @@ You will now see a yellow error screen when viewing the site:
 - Step 19: Under "Details", find the URL for your database and copy it. The link starts with "postgres://...." (We will use this soon)
 
 Back to creating the Heroku APP.
-- Step 20: 
+- Step 20: Login to Heroku and click "New" -> "Create new app" to start a new project.
+- Step 21: Choose an "app name" and "Region" - Then press "Create app".
+
+Adding Config Vars
+
+- Step 22: Click on Settings tab, and choose "Reveal Config Vars"
+    <details>
+    <summary>Allowed hosts example</summary>
+    <img src="documentation/deployment/heroku_index.PNG">
+    </details>
+- Step 23: As key type: DATABASE_URL
+- Step 24: As value: "The link you copied earlier from ElephantSQL.
+    <details>
+    <summary>Allowed hosts example</summary>
+    <img src="documentation/deployment/config_vars.PNG">
+    </details>
+
 
 ---
 ## Github Pages
