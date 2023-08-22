@@ -405,10 +405,10 @@ Create the project (Do NOT forget the dot at the end! Replace PROJ_NAME with you
 Create the app (Replace APP_NAME with your own app name):
 - Step 7: python3 manage.py startapp APP_NAME
 
-- Step 8: Add the installed app to installed apps in settings.py:
+- Step 8: Add the installed app to installed apps in settings.py (In my example my project and app name are equestrian and bookings):
     <details>
-    <summary>Insert image here:</summary>
-    <img src="">
+    <summary>Installed apps example:</summary>
+    <img src="documentation/deployment/installed_apps.PNG">
     </details>
 
 Migrate the changes:
@@ -418,10 +418,11 @@ Run the server to test that it all works.
 - Step 10: python3 manage.py runserver
 
 You will now see a yellow error screen when viewing the site:
-Step 11: Copy the link on the screen and add it to your "Allowed Host" in your settings.py file.
+
+- Step 11: Copy the link on the screen and add it to your "Allowed Host" in your settings.py file(Here I have both my Heroku link and the local link, you should add your Heroku link here aswell when the project is deployed).
     <details>
-    <summary>Insert image here:</summary>
-    <img src="">
+    <summary>Allowed hosts example</summary>
+    <img src="documentation/deployment/allowed_hosts.PNG">
     </details>
 
 
