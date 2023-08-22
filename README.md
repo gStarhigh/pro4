@@ -418,6 +418,31 @@ All changes will be met with a message to the user that tells the user what they
 
 
 #### About Page
+- The About page contains extensive information about the instructor and all the things the company offers. 
+- Below the information section there is a banner that leads to the contact page.
+- There is a embedded YouTube video with an aerial shot of the entire grounds. - At the very bottom there is an Google Maps API integrated for easy navigation and understanding of where the business is located. 
+
+<details>
+<summary>About Desktop</summary>
+<img src="documentation/images/about_desktop.png">
+</details>
+
+<details>
+<summary>About Mobile</summary>
+<img src="documentation/images/about_mobile.png">
+</details>
+(For some reason the YouTube video would not appear on a fullscreen printscreen through devtools on google chrome. Made a screenshot of them instead.)
+<details>
+<summary>Youtube Desktop</summary>
+<img src="documentation/images/about_yt_desktop.png">
+</details>
+
+<details>
+<summary>Youtube Mobile</summary>
+<img src="documentation/images/about_yt_mobile.png">
+</details>
+
+
 
 #### Contact Page
 
