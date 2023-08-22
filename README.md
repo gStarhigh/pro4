@@ -155,6 +155,8 @@ The schema was made using [Lucidchart](https://lucid.co/).
 ---
 ## General features
 
+#### Header and Navigation
+
 --- 
 ## Testing
 

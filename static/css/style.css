@@ -36,6 +36,11 @@ a {
     text-decoration: none;
 }
 
+/* Main block content */
+.main {
+    min-height: 70vh;
+}
+
 /* Messages */
 #messages {
     margin-top: 10px;
