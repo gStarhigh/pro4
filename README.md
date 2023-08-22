@@ -189,6 +189,17 @@ If you are logged in, you will see your Username, with a dropdown option.
     <img src="documentation/testing/logged-in/loggedin_navbar_expanded_mobile.PNG">
     </details>
 
+Above the navbar there is a message for the user prompting the user to login, if the user is not logged in. This message disappears if the user logs in.
+    <details>
+    <summary>Message example image desktop</summary>
+    <img src="documentation/images/logedout_info.PNG">
+    </details>
+    <details>
+    <summary>Message example image mobile</summary>
+    <img src="documentation/images/logedout_info_mobile.PNG">
+    </details>
+
+
 #### Footer
 
 The footer follows the same principle as the navbar, however with different links.
@@ -214,8 +225,42 @@ If the user is not logged in, they will see the following links: "Home, About, C
     <img src="documentation/testing/logged-out/footer_loggedout_mobile.PNG">
     </details>
 
+#### Account
+
+#### Create an account
+- Allows a user to register an account on the website.
+- Fields neccessary to fill out are: E-mail, Username, Password and Password confirmation.
+<details>
+<summary>Register example image desktop</summary>
+<img src="documentation/images/register_desktop.png">
+</details>
+<details>
+<summary>Register example image mobile</summary>
+<img src="documentation/images/register_mobile.png">
+</details>
 
 
+#### Login to an account
+- Allows a user to access otherwise restricted pages and their profile.
+<details>
+<summary>Login example image desktop</summary>
+<img src="documentation/images/login_desktop.png">
+</details>
+<details>
+<summary>Login example image mobile</summary>
+<img src="documentation/images/login_mobile.PNG">
+</details>
+
+#### Login to an account
+- Allows a user to sign out of their account.
+<details>
+<summary>Logout example image desktop</summary>
+<img src="documentation/images/logout_desktop.png">
+</details>
+<details>
+<summary>Logout example image mobile</summary>
+<img src="documentation/images/logout_mobile.png">
+</details>
 
 
 
