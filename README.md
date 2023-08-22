@@ -156,6 +156,52 @@ The schema was made using [Lucidchart](https://lucid.co/).
 ## General features
 
 #### Header and Navigation
+The navbar is visible on all pages throughout the website. However it's different in apperance depending if you are logged in or not, if you are on a mobile device or a laptop/desktop. 
+
+Of the navigation links there are 3 that are always visible no matter your loggin/out status. They are: Home, About and Contact. 
+
+If you are not logged in, you will also see Register and Login.
+    <details>
+    <summary>Example image desktop</summary>
+    <img src="documentation/testing/logged-out/navbar_logged_out.PNG">
+    </details>
+    <details>
+    <summary>Example image mobile</summary>
+    <img src="documentation/testing/logged-out/navbar_logged_out_mobile.PNG">
+    </details>
+    <details>
+    <summary>Example image mobile expanded menu</summary>
+    <img src="documentation/testing/logged-out/navbar_expanded_logged_out_mobile.PNG">
+    </details>
+
+
+If you are logged in, you will see your Username, with a dropdown option.
+    <details>
+    <summary>Example image desktop</summary>
+    <img src="documentation/testing/logged-in/loggedin_navbar_desktop.PNG">
+    </details>
+    <details>
+    <summary>Example image desktop expanded dropdown</summary>
+    <img src="documentation/testing/logged-in/navbar_expanded_logged_in_desktop.PNG">
+    </details>
+    <details>
+    <summary>Example image mobile</summary>
+    <img src="documentation/testing/logged-in/loggedin_navbar_expanded_mobile.PNG">
+    </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 --- 
 ## Testing
