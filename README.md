@@ -318,6 +318,28 @@ On My Bookings page, the user can see all bookings that they have made, both pas
     <img src="documentation/images/approved_lessons_mobile.png">
     </details>
 
+The user also has the ability to update or delete a booking that they have made. However a deletion of a booking is not allowed within 24hours of the starttime of the lesson (Stockholm time).
+
+<details>
+<summary>Update booking on Desktop</summary>
+<img src="documentation/images/update_booking_desktop.png">
+</details>
+
+<details>
+<summary>Update booking on Mobile</summary>
+<img src="documentation/images/update_booking_mobile.png">
+</details>
+
+<details>
+<summary>Delete booking on Desktop</summary>
+<img src="documentation/images/delete_booking_desktop.png">
+</details>
+
+<details>
+<summary>Delete booking on Mobile</summary>
+<img src="documentation/images/delete_booking_mobile.png">
+</details>
+
 #### Book a Lesson Page
 On Book a lessons page, the user can book a Dressage lesson for up to 3 participants per lesson. The user has the ability to choose from Monday to Friday, and the times: 18:00, 19:00, 20:00, 21:00.
 
