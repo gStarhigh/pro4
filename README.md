@@ -408,8 +408,8 @@ Most important packages:
 (All images can be found [Here](https://github.com/gStarhigh/pro4/tree/main/documentation))
 
 <details>
-<summary>Printscreen 1</summary>
-<img src="">
+<summary>Home page</summary>
+<img src="documentation/images/index_fullsize.png">
 </details>
 
 
