@@ -202,7 +202,7 @@ Above the navbar there is a message for the user prompting the user to login, if
 
 #### Footer
 
-The footer follows the same principle as the navbar, however with different links.
+The footer follows the same principle as the navbar, however with different links. The footer also contains 2 external links that will open in a new tab. Those are to Facebook, and to Instagram.
 
 If the user is logged in, they will see the following links: "Home, About, Contact, My Bookings and Logout".
     <details>
