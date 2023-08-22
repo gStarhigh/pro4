@@ -622,6 +622,24 @@ Placeholder
 
 ## Manual Testing
 
+1. Placeholder
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+2. Placeholder #2
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
 ---
 ## Future improvements
 
