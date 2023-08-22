@@ -385,7 +385,47 @@ Placeholder
 
 ---
 ## Deployment
-Creating the Heroku app
+#### Creating the Heroku app
+Install Django and Gunicorn:
+- Step 1: pip3 install 'django<4' gunicorn
+
+Install supporting libraries:
+- Step 2: pip3 install dj_database_url==0.5.0 psycopg2
+
+Install Cloudinary Libraries:
+- Step 3: pip3 install dj3-cloudinary-storage
+- Step 4: pip3 install urllib3==1.26.15
+
+Create the requirements.txt file:
+- Step 5: pip3 freeze --local > requirements.txt
+
+Create the project (Do NOT forget the dot at the end! Replace PROJ_NAME with your own projects name. ):
+- Step 6: django-admin startproject PROJ_NAME .
+
+Create the app (Replace APP_NAME with your own app name):
+- Step 7: python3 manage.py startapp APP_NAME
+
+- Step 8: Add the installed app to installed apps in settings.py:
+    <details>
+    <summary>Insert image here:</summary>
+    <img src="">
+    </details>
+
+Migrate the changes:
+- Step 9: python3 manage.py migrate
+
+Run the server to test that it all works.
+- Step 10: python3 manage.py runserver
+
+You will now see a yellow error screen when viewing the site:
+Step 11: Copy the link on the screen and add it to your "Allowed Host" in your settings.py file.
+    <details>
+    <summary>Insert image here:</summary>
+    <img src="">
+    </details>
+
+
+ Create the Database using ElephantSQL
 
 
 ---
