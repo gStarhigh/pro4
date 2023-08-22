@@ -262,7 +262,38 @@ If the user is not logged in, they will see the following links: "Home, About, C
 <img src="documentation/images/logout_mobile.png">
 </details>
 
+### Main pages
 
+#### Home Page
+The Home page is the first the user encounter when entering the website. It's a hero image at the top next to a container with some information. This container is not the same for loggedin users as it is for loggedout users. 
+    <details>
+    <summary>Logged in example image desktop</summary>
+    <img src="documentation/images/hero_div_loggedin.PNG">
+    </details>
+    <details>
+    <summary>Logged in example image mobile</summary>
+    <img src="documentation/images/hero_div_loggedin_mobile.PNG">
+    </details>
+    <details>
+    <summary>Logged out example image desktop</summary>
+    <img src="documentation/images/hero_div_loggedout.PNG">
+    </details>
+    <details>
+    <summary>Logged out example image mobile</summary>
+    <img src="documentation/images/hero_div_loggedout_mobile.PNG">
+    </details>
+
+Beneth that there are 6 containers with information about what the website has to offer. Those contain information about the following: Dressage Lessons, The Stable, Our Service, Meadows, Summer Pasture and Boarding.
+
+#### My Bookings Page
+
+#### Book a Lesson Page
+
+#### My Account Page
+
+#### About Page
+
+#### Contact Page
 
 
 
