@@ -516,10 +516,8 @@ Now we can save all files and migrate all the changes. Make sure that your proje
 
 - Step 35: In the terminal type: python3 manage.py migrate
 
-The next step is only if you use Cloudinary to store your files.
-If not, jump to step... 
-
 - Step 36: Login or create an account at [Cloudinary](https://cloudinary.com/).
+
 - Step 37: Copy your CLOUDINARY_URL from the Dashboard.
 
 Add the following code to your env.py file:
@@ -535,6 +533,9 @@ In Herokus Config Vars, add the Cloudinary url:
 
 - Step 43: As KEY: PORT
 - Step 44: As Value: 8000
+
+- Step 44.2: As KEY: DEBUG
+- Step 44.3: As Value: FALSE
 
 #### In Settings.py
 
@@ -569,6 +570,36 @@ Telling Django to use Cloudinary for media and static files:
 
 Link all templates files
 
+- Step 47: Place the following code beneath BASE_DIR:
+
+    TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
+Change template directory within the templates array:
+- Step 48: Add the following code:
+
+    'DIRS': [TEMPLATES_DIR],
+
+- Step 49: Do step 11 again, only this time add the HEROKU link aswell.
+
+Create 3 new folders at the root of the directory
+- Step 50: media, static, templates
+
+Creat the Procfile at the root of the directory (Note the capital P)
+- Step 51: Create Procfile
+- Step 52: Add the following code to the Procfile:
+
+    web: gunicorn Your-project-name.wsgi
+
+Now we are all set to deploy the project to Heroku.
+- Step 53: Navigate to Settings and under buildpacks, add:"heroku/python"
+- Step 54: Navigate to Heroku and choose Deploy.
+- Step 55: Deployment method, Link your Github.
+- Step 56: Connect your app to Github.
+- Step 57: Choose Automatic, or Manual Deploy (I Recommend Automatic).
+
+- Step 58: Choose Deploy Branch.
+
+Your project will now build and be ready to use. Good luck!
 
 
 ---
