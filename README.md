@@ -427,7 +427,17 @@ You will now see a yellow error screen when viewing the site:
 
 
  Create the Database using ElephantSQL
+- Step 12: Log in, or create an account at [ElephantSQL](https://elephantsql.com/).
+- Step 13: Click "Create new instance".
+- Step 14: Choose a name for your project.
+- Step 15: Choose your plan (Choose Tiny Turtle for the free option).
+- Step 16: Tags are optional to fill out, then press "Select region".
+- Step 17: Choose the region closest to you.
+- Step 18: Return to the dashboard and choose your newly created project.
+- Step 19: Under "Details", find the URL for your database and copy it. The link starts with "postgres://...." (We will use this soon)
 
+Back to creating the Heroku APP.
+- Step 20: 
 
 ---
 ## Github Pages
