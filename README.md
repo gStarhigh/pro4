@@ -371,6 +371,50 @@ The user also has to check the Terms checkbox. When the user has successfully fi
 
 
 #### My Account Page
+On My account page, the user has the ability to add their First and Lastname to their account. These are not required fields when registering to the website. The user can also change their email address if for example, they have a new one. 
+
+All changes will be met with a message to the user that tells the user what they updated. If the user updates more than one field at the same time, multiple messages will be shown as one. 
+
+<details>
+<summary>My account on Desktop</summary>
+<img src="documentation/images/my_account_desktop.png">
+</details>
+
+<details>
+<summary>My account on Mobile</summary>
+<img src="documentation/images/my_account_mobile.png">
+</details>
+
+<details>
+<summary>Updating firstname desktop</summary>
+<img src="documentation/images/first_name_message.PNG">
+</details>
+
+<details>
+<summary>Updating firstname mobile</summary>
+<img src="documentation/images/first_name_message_mobile.PNG">
+</details>
+
+<details>
+<summary>Updating surname desktop</summary>
+<img src="documentation/images/surname_desktop.PNG">
+</details>
+
+<details>
+<summary>Updating surname mobile</summary>
+<img src="documentation/images/surname_mobile.PNG">
+</details>
+
+<details>
+<summary>Updating multiple fields desktop</summary>
+<img src="documentation/images/multiple_messages_desktop.PNG">
+</details>
+
+<details>
+<summary>Updating multiple fields mobile</summary>
+<img src="documentation/images/multiple_messages_mobile.PNG">
+</details>
+
 
 #### About Page
 
