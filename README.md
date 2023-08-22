@@ -319,6 +319,34 @@ On My Bookings page, the user can see all bookings that they have made, both pas
     </details>
 
 #### Book a Lesson Page
+On Book a lessons page, the user can book a Dressage lesson for up to 3 participants per lesson. The user has the ability to choose from Monday to Friday, and the times: 18:00, 19:00, 20:00, 21:00.
+
+The user then have to choose:
+- Between 1 and 3 participants.
+- The level of their skills as an ekipage.
+
+The user also has to check the Terms checkbox. When the user has successfully filled out the form, the booking will be available for the user to see, update and delete on "My bookings" page. The user(and Admin) will also get a confirmation email that the booking has been taken place. 
+
+<details>
+<summary>Create booking on Desktop</summary>
+<img src="documentation/images/create_booking_desktop.png">
+</details>
+
+<details>
+<summary>Create booking on Mobile</summary>
+<img src="documentation/images/create_booking_mobile.png">
+</details>
+
+<details>
+<summary>Confirmation Email to Admin</summary>
+<img src="documentation/images/admin_booking_email.PNG">
+</details>
+
+<details>
+<summary>Confirmation Email to User</summary>
+<img src="documentation/images/user_booking_email.PNG">
+</details>
+
 
 #### My Account Page
 
