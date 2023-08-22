@@ -55,7 +55,18 @@ The purpose of the site is to provide an easy understandable website with a simp
 No flashy colors were used, but the colors were calm and pleasing to interact with.
 A favicon were used to make the website look better in the tab-bar.
 
-### Colors used:
+### Colors and Fonts used:
+
+#### Font
+The Font I chose is from GoogleFonts and are free to use. I chose the font called "Roboto" with sans-serif as a fallback font. 
+Roboto is clean and easy to read. 
+
+#### Color
+The main colors used on the site are:
+- The text color for the site is: #3c153b.
+- The background color for the site is: #88ab75.
+- The navbar and the footer uses the color: #99c084. 
+
 
 
 ## Project Goals
