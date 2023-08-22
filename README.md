@@ -382,7 +382,7 @@ Most important packages:
 
 <details>
 <summary>All packages</summary>
-<img src="">
+<img src="documentation/images/packages.PNG">
 </details>
 
 
