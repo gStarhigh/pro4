@@ -229,6 +229,8 @@ If the user is not logged in, they will see the following links: "Home, About, C
 ## Testing
 
 #### Lighthouse result
+The test was conducted on the Home page.
+
 A good result was presented on the desktop test.
     <details>
     <summary>Desktop</summary>
