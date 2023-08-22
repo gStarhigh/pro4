@@ -286,6 +286,37 @@ The Home page is the first the user encounter when entering the website. It's a 
 Beneth that there are 6 containers with information about what the website has to offer. Those contain information about the following: Dressage Lessons, The Stable, Our Service, Meadows, Summer Pasture and Boarding.
 
 #### My Bookings Page
+On My Bookings page, the user can see all bookings that they have made, both past and upcoming. If there is no bookings made, an message will be displayed: "You have no bookings yet". The bookings are sorted by date. The user you can filter their bookings by three variables: 
+    
+- All: Displays all bookings, regardless of date or status.
+
+- Upcoming: Only displays "Approved" lessons that has not passed.
+
+- Completed: Only displayes "Approved" lessons that has passed.
+
+    <details>
+    <summary>Bookings page on Desktop</summary>
+    <img src="documentation/images/bookings_desktop.png">
+    </details>
+
+    <details>
+    <summary>Bookings Page on Mobile</summary>
+    <img src="documentation/images/bookings_mobile.png">
+    </details>
+
+- If a lesson is not yet approved by the admin, the Status will read: "Awaiting approval" in red text.
+
+- If a lesson is approved by the admin, the Status will read: "Approved" in green text. 
+
+    <details>
+    <summary>Approved lessons on Desktop</summary>
+    <img src="documentation/images/approved_lessons_desktop.png">
+    </details>
+
+    <details>
+    <summary>Approved lessons on Mobile</summary>
+    <img src="documentation/images/approved_lessons_mobile.png">
+    </details>
 
 #### Book a Lesson Page
 
