@@ -372,14 +372,33 @@ Placeholder
 - Javascript
 - Django
 
-### Libraries used:
+### Modules/ Packages used:
+Most important packages:
+- django: Python web framework used to develop the site.
+- psycopg2: PostgreSQL database for the Python programming lanugage.
+- dj3-cloudinary-storage: Integrates Cloudinary with Django Storage API.
+- django-allauth: Integrates user authentication aswell as 3rd party account authientication such as facebook and other social accounts.
+- Gunicorn: Gunicorn is a pure-Python HTTP server for WSGI applications.
+
+<details>
+<summary>All packages</summary>
+<img src="">
+</details>
 
 
-### Software used:
-- Gitpod - Used for version control and to commit and push code to github.
-- Github - Github is used to store the projects code after being pushed from gitpod. 
-- Heroku - Used to deploy the project online.
-- PostgreSQL(ElephantSQL)
+### Frameworks and Websites used:
+- Gitpod: Used for version control and to commit and push code to github.
+- Github: Github is used to store the projects code after being pushed from gitpod. 
+- Heroku: Used to deploy the project online.
+- PostgreSQL(ElephantSQL): Used as Database.
+- Cloudinary: Used to host all images on the site.
+- LucidChart: Used to create the Database Schema and the Flowchart.
+- Balsamiq: Used to create the Wireframes for the site.
+- Google Fonts: Used as font for the site.
+- Font Awesome: Used for icon implementation on the site.
+- Favicon: Used as an icon in the tab-bar of the site.
+- Bootstrap: Used for responsivness and layout. 
+
 ---
 ## Final Result
 - The final deployed project can be found [here.](https://star-pro4-3dc81848625c.herokuapp.com/)
