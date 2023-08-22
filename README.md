@@ -516,6 +516,59 @@ Now we can save all files and migrate all the changes. Make sure that your proje
 
 - Step 35: In the terminal type: python3 manage.py migrate
 
+The next step is only if you use Cloudinary to store your files.
+If not, jump to step... 
+
+- Step 36: Login or create an account at [Cloudinary](https://cloudinary.com/).
+- Step 37: Copy your CLOUDINARY_URL from the Dashboard.
+
+Add the following code to your env.py file:
+- Step 38: os.environ["CLOUDINARY_URL"] = ( The link goes here )
+Make sure the link looks like this: ""cloudinary://************************"
+
+In Herokus Config Vars, add the Cloudinary url:
+- Step 39: As KEY: CLOUDINARY_URL
+- Step 40: As Value: "The same link as in env.py"
+
+- Step 41: As KEY: DISABLE_COLLECTSTATIC
+- Step 42: As Value: 1
+
+- Step 43: As KEY: PORT
+- Step 44: As Value: 8000
+
+#### In Settings.py
+
+Add Cloudinary Libraries to installed apps (The order is important!)
+
+- Step 45: Add the following code:
+
+    INSTALLED_APPS = [
+
+    'cloudinary_storage', <- This is new
+
+    'django.contrib.staticfiles', (This was here before...)
+
+    'cloudinary', <- This is new
+
+    ]
+
+Telling Django to use Cloudinary for media and static files:
+
+- Step 46: Add the following code:
+
+    STATIC_URL = '/static/'
+    STATICFILES_STORAGE = ('cloudinary_storage.storage.'
+                        'StaticHashedCloudinaryStorage')
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+    MEDIA_URL = '/media/'
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+    DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+Link all templates files
+
 
 
 ---
