@@ -668,7 +668,7 @@ Testing of the User stories for the project.
 |-------------|------------|---------------------|-------------------|
 | 1 | As a Site User I can register for an account so that I can book, update and delete my bookings | As a non registered user I can create an account so that I can access and create bookings. After I have created a booking I can update or delete the booking. Success Messages are displayed whenever I alter any data. | :heavy_check_mark: |
 | 2 | As a Site User I can easily see my login status so that I know if I'm logged in or not to the site. | When I am not logged in, my username is not visible in the navbar or on the container at the index page. I see a prompt message at the top of the page that asks me to login. When I am logged in, I can see my username in the navbar and on the container on the hom page and the prompt message to login is not visible. | :heavy_check_mark: |
-| 14 | Placeholder | Placeholder  | :heavy_check_mark: |
+| 14 | As a User I can see my account information so that I can add first name, lastname, update email adress | As a logged in user I can access and update my information. All changes to my profile is confimed with a success message that tells me what I've updated. | :heavy_check_mark: |
 
 2. Placeholder #2
 
