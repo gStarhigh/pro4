@@ -676,7 +676,7 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
 | 3 | As a logged in user I can see all my bookings so that I know when I my bookings will take place | When I am not logged in I cannot access my bookings. When I am logged in I can see the link to my bookings page in the dropdown menu in the navbar. When I click My bookings, I am taken to my bookings page and all, bookings I've made are visible. If no bookings are made, a message is displayed telling me that "I have no bookings yet" I can see the status of all bookings. | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :x: |
+| 4 | As a Logged In Site User I can update and delete my bookings so that I can change or cancel my bookings. | When I am not logged in I cannot access or alter any bookings made. When I am logged in I have the options to either "update" or "delete" a booking. I cannot delete a booking that has passed, or is within 24 hours of starting., when trying I get a message displayed to me. I can update any booking regardeless of date and time of the booking. I can delete any booking that has not passed and is not within 24 hours of starting. Any valid update or deletion is met with sucess messages. | :heavy_check_mark: |
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
 
