@@ -726,7 +726,13 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 1. Having 2 databases, one for local testing and one for the deployed version. This would not flood the deployed versions database with test data.
 
-2. 
+2. Make it possible for a user to send in a request for a place at the summer pasture by creating a booking system for it.
+
+3. Make it possible for a user to send in a request for a place at the stable boxes by creating a booking system for it.
+
+4. Email confirmation to the user when a dressage lessons status has changed from "Awaiting approval" to "Confirmed" - This would be possible right now, however emailJS only allows for 2 free templates and both are used in the project already for more important features. 
+
+5. When making a booking, have the user see a form of calendar where all dates that were available for booking were presented. When the user chooses a date, all available times that date are then displayed for the user. After the user has chosen a time, the user is taking to the form to fill out the remaining required information.
 
 
 ---
