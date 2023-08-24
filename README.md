@@ -727,19 +727,56 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Login message | The login message at the top of the site is not visible. | Message should not be visible. | :heavy_check_mark: |
+| Username in Navbar| The Username should be visible in the navbar. | The username is visible. | :heavy_check_mark: |
+| Dropdown menu from username | Click Username. | A dropdown menu should appear with "my bookings, book a lesson, my account and logout" as options. | :heavy_check_mark: |
+| Dropdown menu from username | Click My bookings from dropdown menu. | I am taken to My bookings page. | :heavy_check_mark: |
+| Dropdown menu from username | Click Book a lesson from dropdown menu. | I am taken to book a lesson page. | :heavy_check_mark: |
+| Dropdown menu from username | Click My account from dropdown menu. | I am taken to my account page. | :heavy_check_mark: |
+| Dropdown menu from username | Click Logout from dropdown menu. | I am taken to logout page. | :heavy_check_mark: |
+| Username in Hero Container | My username should be visible in the Hero container. | My username is visible. | :heavy_check_mark: |
+| Footer | "My bookings" link is visible in the footer. | My bookings is visible. | :heavy_check_mark: |
+| Footer | Click My "bookings" link. | I am taken to my bookings page. | :heavy_check_mark: |
+| Facebook icon | Click the Facebook icon | Facebook should open in a new tab | :heavy_check_mark: |
+| Instagram Icon | Click the Instagram icon | Instagram should open in a new tab | :heavy_check_mark: |
 
-2. Placeholder #2
+
+2. My bookings page.
+
+- As a Logged out user:
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :x: |
+| Access My Bookings page | Try to access my bookings page. | I cannot access my bookings page and are taken to the login page instead. | :heavy_check_mark: |
+
+- As a Logged in user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| See my bookings | View all bookings when entering the page. | I can see all bookings, regardless of date and status when entering the page. | :heavy_check_mark: |
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+
+
+
+
+
+
+
+
+
 
 ---
 ## Future improvements
