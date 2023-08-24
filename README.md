@@ -754,16 +754,20 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
 | See my bookings | View all bookings when entering the page. | I can see all bookings, regardless of date and status when entering the page. | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Filter bookings | I can filter the bookings on "All". | All bookings are visible, regardless of date and status. | :heavy_check_mark: |
+| Filter bookings | I can filter the bookings on "Upcoming". | Only bookings that has not passed and have the status "Approved" are visible. | :heavy_check_mark: |
+| Filter bookings | I can filter the bookings on "Completed" | Only bookings that have passed and have the status "Approved" are visible. | :heavy_check_mark: |
+| Update Booking | Click "Update Booking" from my bookings page. | I am taken to the page where I can update the bookings details. | :heavy_check_mark: |
+| Update booking | Try to update to a passed date. | I cannot update a booking to a past date. | :heavy_check_mark: |
+| Update booking | Try to update number of participants to exceed 3 in total for the time booked. | I an notified that the booking is full, and cannot change the number of participants. | :heavy_check_mark: |
+| Update booking | Change the focus for the lesson. | I can change the focus of the lesson. | :heavy_check_mark: |
+| Update booking | Change date to a future date. | I can change the date to a future date. | :heavy_check_mark: |
+| Update booking | Change time. | I can change time of the booking. | :heavy_check_mark: |
+| Update booking | Change level. | I can change level. | :heavy_check_mark: |
+| Update booking | Click Update booking from the update view. | I am taken back to My bookings page with a success message that the booking has been updated. | :heavy_check_mark: |
+| Update booking | Click the Cancel button | I am taken back to My bookings page. | :heavy_check_mark: |
+
+| Delete Booking | Placeholder | Placeholder | :heavy_check_mark: |
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
