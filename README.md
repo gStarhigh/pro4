@@ -681,14 +681,12 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | 6 | As a Logged in User I can add information to my booking so that the teacher can be prepared for the lesson. | As a Logged in user I can add information to the booking. I can choose date and time. I can choose the number of participants for my booking from a dropdown list. I can choose the level of the ekipage from a dropdown list. I can add whatever information I want in textform to the instructor and I can reset or submit the booking. When A booking is successfull, a message is displayed. | :heavy_check_mark: |
 | 13 | As a User I can filter my bookings so that I easily can see which has passed and which are upcoming. | As a Logged in user I can filter my bookings to get a better understanding of which lessons has passed and which are in the future. If I filter "All", all bookings, both those in the past and future regardless of status are shown. If I filter "Completed", "confirmed" bookings that have passed are shown. If I filter "Upcoming" all bookings that have the status "Confirmed" and have not passed are shown. | :heavy_check_mark: |
 
-3. EPIC:
+3. EPIC: Home/About pages.
 
-| **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
-|-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
+| **ID** | **User Story** |**As a..** | **Action/Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 8 | Create Homepage | As a user I can immediately understand the purpose of the site so that I can easily decide if it meets my needs. | As a logged out user I am met with a message at the top that prompts me to "Login to book my lesson today". Beneath the navbar there is a big text that informs me that this site handels Dressage lessons and prompts me to sign up or login to book a lesson. As a Logged in user I am met with my name and a welcome back message and text about booking my next lesson. Further down on the page I can read about what the site offers, including the Dressage lessons as the number 1 information section. | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | Placeholder | :x: |
 
 4. EPIC: 
 
