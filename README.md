@@ -766,10 +766,15 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | Update booking | Change level. | I can change level. | :heavy_check_mark: |
 | Update booking | Click Update booking from the update view. | I am taken back to My bookings page with a success message that the booking has been updated. | :heavy_check_mark: |
 | Update booking | Click the Cancel button | I am taken back to My bookings page. | :heavy_check_mark: |
+| Update booking | Uncheck the terms box | I cannot save the updated booking without having the terms box checked. | :heavy_check_mark: |
+| Delete Booking | Delete a booking that has passed. | I cannot delete a booking that has passed. | :heavy_check_mark: |
+| Delete booking | Delete a booking that starts within 24 hours. | I cannot delete a booking that starts within 24 hours. | :heavy_check_mark: |
+| Delete booking | Delete a booking that does not start within 24 hours. | Booking is deleted and success message displayed. | :heavy_check_mark: |
 
-| Delete Booking | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+
+
+
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
 
 
