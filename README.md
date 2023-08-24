@@ -772,9 +772,51 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | Delete booking | Delete a booking that does not start within 24 hours. | Booking is deleted and success message displayed. | :heavy_check_mark: |
 
 
+3. Book a lesson page.
+
+- As a Logged out user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Access Book a lessons page | Try to access Book a lessons page. | I cannot access Book a lessons page and are taken to the login page instead. | :heavy_check_mark: |
+
+- As a Logged in user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Focus | Submit a booking without a focus. | I cannot submit without entering a focus. | :heavy_check_mark: |
+| Date | Try to book a past date by manually entering the date. | I cannot submit with a past date. | :heavy_check_mark: |
+| Date | Try to book a Saturday or Sunday. | I cannot book a Saturday or Sunday. | :heavy_check_mark: |
+| Date | Book Monday to Friday | I can book Monday to Friday. | :heavy_check_mark: |
+| Time | Choose an invalid time | I cannot choose an invalid time. | :heavy_check_mark: |
+| Time | Choose a valid time | I can book a valid time. | :heavy_check_mark: |
+| Participants | Book with either 1, 2 or 3 participants. | I can book with either 1, 2 or 3 participants, if the time was free before. | :heavy_check_mark: |
+| Choose level | I can choose my level. | I can book with either level chosen. | :heavy_check_mark: |
+| Checkbox | Submit without checking the checkbox. | I cannot submit the booking without checking the checkbox. | :heavy_check_mark: |
+| Checkbox | Submit with checking the checkbox. | I can submit the booking with the checkbox checked. | :heavy_check_mark: |
+| Terms modal | Click "Read terms here" | A modal appears with the terms of the booking. | :heavy_check_mark: |
+| Terms modal  | Click "Dismiss" | Closes the modal. | :heavy_check_mark: |
+| Success message | Submit a valid booking. | Success message should appear. | :heavy_check_mark: |
 
 
 
+4. My Account page.
+
+- As a Logged out user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+- As a Logged in user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
 
 
