@@ -661,8 +661,9 @@ All Python files has passed through validation and shows no errors:
 
 ## Testing User Stories
 Testing of the User stories for the project.
+All User Stories can be found [Here](https://github.com/users/gStarhigh/projects/4)
 
-1. EPIC: User Authorization. [Link](https://github.com/users/gStarhigh/projects/4/views/1?pane=issue&itemId=33280441)
+1. EPIC: User Authorization.
 
 | **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
