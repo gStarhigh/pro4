@@ -671,11 +671,11 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | 2 | As a Site User I can easily see my login status so that I know if I'm logged in or not to the site. | When I am not logged in, my username is not visible in the navbar or on the container at the index page. I see a prompt message at the top of the page that asks me to login. When I am logged in, I can see my username in the navbar and on the container on the hom page and the prompt message to login is not visible. | :heavy_check_mark: |
 | 14 | As a User I can see my account information so that I can add first name, lastname, update email adress | As a logged in user I can access and update my information. All changes to my profile is confimed with a success message that tells me what I've updated. | :heavy_check_mark: |
 
-2. Placeholder #2
+2. EPIC: Lesson Booking.
 
-| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+| **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :x: |
+| 3 | As a logged in user I can see all my bookings so that I know when I my bookings will take place | When I am not logged in I cannot access my bookings. When I am logged in I can see the link to my bookings page in the dropdown menu in the navbar. When I click My bookings, I am taken to my bookings page and all, bookings I've made are visible. If no bookings are made, a message is displayed telling me that "I have no bookings yet" I can see the status of all bookings. | :heavy_check_mark: |
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
