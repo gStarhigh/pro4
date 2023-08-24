@@ -688,14 +688,13 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | 8 | Create Homepage | As a user I can immediately understand the purpose of the site so that I can easily decide if it meets my needs. | As a logged out user I am met with a message at the top that prompts me to "Login to book my lesson today". Beneath the navbar there is a big text that informs me that this site handels Dressage lessons and prompts me to sign up or login to book a lesson. As a Logged in user I am met with my name and a welcome back message and text about booking my next lesson. Further down on the page I can read about what the site offers, including the Dressage lessons as the number 1 information section. | :heavy_check_mark: |
 | 9 | Create About us page | As a User I can read about the company so that I know who is running it and who the teacher is. | As a User I can access the About page and read about everything that concerns this website and the instructor behind the lessons. There is also images which makes the user more comfortable than just having text. There is extensive information aswell as a youtube video of the grounds and a Google Map informing me of where the company is located. | :heavy_check_mark: |
 
-4. EPIC: 
+4. EPIC: Contact Abilities.
 
-| **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
-|-------------|------------|---------------------|-------------------|
-| Placeholder | USER STORY: Create About us page#9 | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
+| **ID** | **User Story** |**As a..** | **Action/Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 10 | Create "Contact us" page | As a user I can contact the teacher so that I can get answers to my questions. | As a user I can navigate to the contact page regardless of login status. I can fill out a form that lets me contact the site owner for any issue that I might have as subject and message are free to fill in. When I submit the form to the site owner I get a success message that the message has been sent, aswell as a email sent to my email adreess that the site owner will get back to me. | :heavy_check_mark: |
+
+
 
 5. EPIC: 
 
