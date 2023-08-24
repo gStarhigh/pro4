@@ -660,16 +660,16 @@ All Python files has passed through validation and shows no errors:
 ---
 
 ## Testing User Stories
-Placeholder
+Testing of the User stories for the project.
 
-1. Placeholder
+1. EPIC: User Authorization. [Link](https://github.com/users/gStarhigh/projects/4/views/1?pane=issue&itemId=33280441)
 
-| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+| **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| 1 | As a Site User I can register for an account so that I can book, update and delete my bookings | As a non registered user I can create an account so that I can access and create bookings. After I have created a booking I can update or delete the booking. Success Messages are displayed whenever I alter any data. | :heavy_check_mark: |
+|  | Placeholder | Placeholder  | :heavy_check_mark: |
+|  | Placeholder | Placeholder  | :heavy_check_mark: |
+|  | Placeholder | Placeholder  | :heavy_check_mark: |
 
 2. Placeholder #2
 
