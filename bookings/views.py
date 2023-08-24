@@ -201,11 +201,15 @@ class UpdateBooking(LoginRequiredMixin, UpdateView):
         booking = get_object_or_404(LessonBooking, booking_id=booking_id,
                                     user=request.user)
         form = UpdateLessonBookingForm(request.POST, instance=booking)
+
         if form.is_valid():
-            booking = form.save(commit=False)
-            booking.user = request.user
-            booking.save()
-            messages.info(request, 'Your lesson was updated successfully!')
-            return redirect('my_bookings')
+            if form.cleaned_data['terms_checked']:
+                booking = form.save(commit=False)
+                booking.user = request.user
+                booking.save()
+                messages.info(request, 'Your lesson was updated successfully!')
+                return redirect('my_bookings')
+            else:
+                form.add_error('terms_checked', 'You must agree to the terms.')
         return render(request, self.template_name,
                       {'form': form, 'booking': booking})
