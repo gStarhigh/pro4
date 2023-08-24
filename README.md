@@ -696,14 +696,11 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 
 
-5. EPIC: 
+5. EPIC: Admin
 
-| **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
-|-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
-| Placeholder | Placeholder | Placeholder | :x: |
+| **ID** | **User Story** |**As a..** | **Action/Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|-------------------|
+| 15 | Admin panel | As a Admin I can approve lessons so that the user can see that it has been approved | When a booking has been made, the Admin receives an email with the booking details. In the Admin panel, I as a admin can change status of bookings to either "Approved" or "Awaiting approval". As a Admin I can filter bookings by user, lesson date,  lesson time or by Booking status. When the admin changes status of a booking, it's reflected on the booked users booking. | :heavy_check_mark: |
 
 
 ## Manual Testing
