@@ -804,6 +804,7 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | If you book a lesson where the lesson is full, emailJS will still send out an email. | I believe an AJAX request to the server would solve this - Future implementation. | 
 | Error in console: "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'." | What I've understood this has something to do with Google's end. It has no affect on my site and everything works as it should. If i delete my iframe, the error disappears. I have found no solution to this, and as it does not affect the functionality, the iframe is left in the project. | 
 | To the right of "remember me" and to the left of the checkbox, there is a symbol which I cannot seem to remove.  | Unknown. I have tried all I could think of but could not get it to disappear. Perhaps usage of crispy forms would be an idea. | 
+| While testing I found that the terms checked button could be unchecked while updating the booking. | I solved this by adding a condition that checks whether or not the terms_checked checkbox is still checked, if not, presenting an error message. |
 
 ---
 ## Languages, Libraries and Software
