@@ -686,13 +686,13 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | **ID** | **User Story** |**As a..** | **Action/Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|-------------------|
 | 8 | Create Homepage | As a user I can immediately understand the purpose of the site so that I can easily decide if it meets my needs. | As a logged out user I am met with a message at the top that prompts me to "Login to book my lesson today". Beneath the navbar there is a big text that informs me that this site handels Dressage lessons and prompts me to sign up or login to book a lesson. As a Logged in user I am met with my name and a welcome back message and text about booking my next lesson. Further down on the page I can read about what the site offers, including the Dressage lessons as the number 1 information section. | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | Placeholder | :x: |
+| 9 | Create About us page | As a User I can read about the company so that I know who is running it and who the teacher is. | As a User I can access the About page and read about everything that concerns this website and the instructor behind the lessons. There is also images which makes the user more comfortable than just having text. There is extensive information aswell as a youtube video of the grounds and a Google Map informing me of where the company is located. | :heavy_check_mark: |
 
 4. EPIC: 
 
 | **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | USER STORY: Create About us page#9 | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
