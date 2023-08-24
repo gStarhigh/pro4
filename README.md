@@ -445,11 +445,46 @@ All changes will be met with a message to the user that tells the user what they
 
 
 #### Contact Page
+- The Contact page allows any user, registered or not, to contact the page owner through a contact form. The form has the following fields:
+    - Name
+    - Email
+    - Subject
+    - Message
+
+If you are logged in, the Name and Email are pre-populated with the Username and email that the user chose when creating the account. If the user is not logged in, the user has to populate these fields manually. 
+
+When the user submits the form, an email is sent to the owner of the page, aswell as an email to the user submitting the form. 
 
 
+<details>
+<summary>Image of the Contact Page - Desktop</summary>
+<img src="documentation/images/contact_desktop.png">
+</details>
+<details>
+<summary>Image of the Contact Page - Mobile</summary>
+<img src="documentation/images/contact_mobile.png">
+</details>
 
+<details>
+<summary>Image of the Admin Email</summary>
+<img src="documentation/images/admin_contact_email.PNG">
+</details>
 
+<details>
+<summary>Image of the User Email</summary>
+<img src="documentation/images/user_contact_email.PNG">
+</details>
 
+A success message is also shown to the user when the form is valid and submitted.
+
+<details>
+<summary>Success Message - Desktop</summary>
+<img src="documentation/images/contact_message_sent_desktop.PNG">
+</details>
+<details>
+<summary>Success Message - Mobile</summary>
+<img src="documentation/images/contact_message_sent_mobile.PNG">
+</details>
 
 
 --- 
