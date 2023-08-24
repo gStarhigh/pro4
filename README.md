@@ -680,6 +680,34 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | Placeholder | Placeholder | Placeholder | :x: |
 | Placeholder | Placeholder | Placeholder | :x: |
 
+3. EPIC:
+
+| **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+
+4. EPIC: 
+
+| **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+
+5. EPIC: 
+
+| **ID** | **User Story** | **Action/Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+| Placeholder | Placeholder | Placeholder | :x: |
+
+
 ## Manual Testing
 
 1. Placeholder
