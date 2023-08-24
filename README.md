@@ -694,8 +694,6 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 |-------------|------------|---------------------|-------------------|-------------------|
 | 10 | Create "Contact us" page | As a user I can contact the teacher so that I can get answers to my questions. | As a user I can navigate to the contact page regardless of login status. I can fill out a form that lets me contact the site owner for any issue that I might have as subject and message are free to fill in. When I submit the form to the site owner I get a success message that the message has been sent, aswell as a email sent to my email adreess that the site owner will get back to me. | :heavy_check_mark: |
 
-
-
 5. EPIC: Admin
 
 | **ID** | **User Story** |**As a..** | **Action/Expected result** | **Pass/Fail** |
