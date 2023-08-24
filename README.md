@@ -703,7 +703,27 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 ## Manual Testing
 
-1. Placeholder
+1. Home Page
+
+- As a Logged out user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Login message | The login message at the top of the site is visible. | Message should be visible. | :heavy_check_mark: |
+| Login message | Click "Login" on the message. | I am taken to login page. | :heavy_check_mark: |
+| Navbar | Register and Login elements should be visible. | Register and Login are visible. | :heavy_check_mark: |
+| Register link | Click the "Register" link in navbar. | I am taken to the Register page. | :heavy_check_mark: |
+| Username in Navbar | No username should be visible in navbar. | No username is visible in Navbar. | :heavy_check_mark: |
+| Sign Up button | Click the "Sign Up!" button on the hero container. | I am taken to the register page. | :heavy_check_mark: |
+| Log in button | Click the "Log in" button on the hero container. | I am taken to the login page. | :heavy_check_mark: |
+| Footer | "My bookings should not be displayed" | "My bookings" is not displayed | :heavy_check_mark: |
+| Register link in footer | Click the "Register" link in footer. | I am taken to the register page. | :heavy_check_mark: |
+| Log in in footer | Click the "Log in" link in footer. | I am taken to the login page. | :heavy_check_mark: |
+| Facebook icon | Click the Facebook icon | Facebook should open in a new tab | :heavy_check_mark: |
+| Instagram Icon | Click the Instagram icon | Instagram should open in a new tab | :heavy_check_mark: |
+
+
+- As a Logged in user:
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
