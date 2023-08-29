@@ -190,6 +190,12 @@ The Lesson Booking Model contains all data from the user when they book a lesson
 
 Each booking has a lesson_date and a lesson_time. As each lessontime can have up to 3 no_participants, it's important to log and save that information.
 
+Lesson_date is a DateField. This holds the date of the lesson.
+
+Lesson_time is a Timefield. This holds the time of the lesson.
+
+No_participants is a PositiveIntegerField as the input can only be 1-3.
+
 Level_ekipage is a set of pre-determind options for the user to choose from, to let the instructor know what to expect and prepare for.
 
 Fous_lesson is a text field, letting the user write what they want to focus on during their lesson.
