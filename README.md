@@ -884,6 +884,34 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | Logout confirmation | Click Logout on the confirmation question. | I am now logged out. | :heavy_check_mark: |
 
 
+9. Admin page
+
+- As a non Admin/Superuser
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Acces Admin panel | As a non-admin I try to access the admin panel. | I cannot access the admin panel. | :heavy_check_mark: |
+
+- As Admin/Superuser
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Acces Admin panel | As a Admin I try to access the admin panel. | I am logged in to the admin panel. | :heavy_check_mark: |
+| Access Users | Click on Users | I am taken to the users page. | :heavy_check_mark: |
+| Edit users | Add or change any information on a users account page. | I am able to alter or add any information to the users account. | :heavy_check_mark: |
+| Users filter | Change filter to staff status. | Only users with staff status are shown. | :heavy_check_mark: |
+| Lesson filter | Change filter to a specific user. | Only lessons made by that filtered user are displayed. | :heavy_check_mark: |
+| Lesson filter | Change filter to a specific day. | Only lessons booked on that filtered day are displayed. | :heavy_check_mark: |
+| Lesson filter | Change filter to a specific time. | Only lessons booked on that filtered time are displayed. | :heavy_check_mark: |
+| Lesson filter | Change filter to confirmed. | Only lessons with the status Confirmed are displayed. | :heavy_check_mark: |
+| Lesson filter | Change filter to awaiting approval. | Only lessons with the status Awaiting approval are displayed. | :heavy_check_mark: |
+| Approve Lessons | Select one specific lesson and approve it. | The lesson is approved. | :heavy_check_mark: |
+| Approve lessons | Approve a specific lesson. | After a lesson is approved, the status on the lesson is changed on the users my bookings page. | :heavy_check_mark: |
+| Approve Lessons | Approve all lessons that have the status of Awaiting approval at the same time. | All lessons are now displayed as Confirmed. | :heavy_check_mark: |
+| Delete Lessons | Delete a specific lesson. | As Admin I am able to delete a specific lesson. | :heavy_check_mark: |
+| Delete Lessons | Delete all lessons. | As Admin I am able to delete a all lessons in the database. | :heavy_check_mark: |
+
+
 ---
 ## Future improvements
 
