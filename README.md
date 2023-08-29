@@ -867,27 +867,14 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-
-- As a Logged in user:
-
-| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
-|-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Login | Type in wrong username and try to login. | Error message is displayed that either username or password is incorrect. | :heavy_check_mark: |
+| Login | Type in correct details. | I am being logged in. | :heavy_check_mark: |
+| Login | Login correctly. | Success message is displayed. | :heavy_check_mark: |
+| Login | Login correctly. | Navbar now displays my username. | :heavy_check_mark: |
+| Login | Login correctly. | I am taken to the Home page. | :heavy_check_mark: |
 
 
 8. Logout page.
-
-- As a Logged out user:
-
-| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
-|-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
 
 - As a Logged in user:
 
