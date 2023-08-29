@@ -69,7 +69,6 @@ The main colors used on the site are:
 - The navbar and the footer uses the color: #99c084. 
 
 
-
 ## Project Goals
 The project goals was to create a website using the Django Framework in Python along with HTML CSS and Javascript. A user should be able to create a booking for their dressage lesson at available times and should be able to be up to 3 participants per lesson. 
 
@@ -498,7 +497,6 @@ All changes will be met with a message to the user that tells the user what they
 <summary>Youtube Mobile</summary>
 <img src="documentation/images/about_yt_mobile.png">
 </details>
-
 
 
 #### Contact Page
