@@ -806,18 +806,18 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Access My Account page | Try to access My Account page. | I cannot access My Account page and are taken to the login page instead. | :heavy_check_mark: |
 
 - As a Logged in user:
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Cancel Changes | Add information then press Cancel. | The changes is not saved and I am taken to the homepage. | :heavy_check_mark: |
+| Update Details | Update the First Name field | Success message is shown and the Fist Name is updated. | :heavy_check_mark: |
+| Update Details | Update the Last Name field | Success message is shown and the Last Name is updated. | :heavy_check_mark: |
+| Update Details | Update the Email field. | Success message is shown and the Email is updated. | :heavy_check_mark: |
+| Update Details | Update multiple fields at the same time. | The success message is now including all changes that were made. | :heavy_check_mark: |
+
 
 5. About page.
 
