@@ -145,29 +145,35 @@ The flowchart was made using [Lucidchart](https://lucid.co/).
 
 #### Wireframes
 The Wireframes should not be considered finished result of the website, but as a tool I used to plan and visualize the project as I worked on it. 
+
+All wireframes were created using [Balsamiq](https://balsamiq.com/).
 <details>
 <summary>Home Page - Not logged in</summary>
-<img src="">
+<img src="documentation/wireframes/home_loggedout.PNG">
 </details>
 <details>
 <summary>Home Page - Logged in</summary>
-<img src="">
+<img src="documentation/wireframes/home_loggedin.PNG">
 </details>
 <details>
-<summary>Home Page - Mobile</summary>
-<img src="">
+<summary>Home Page - Not logged in - Mobile</summary>
+<img src="documentation/wireframes/home_mobile_loggedout.PNG">
+</details>
+<details>
+<summary>Home Page - Logged in - Mobile</summary>
+<img src="documentation/wireframes/home_mobile_loggedin.PNG">
 </details>
 <details>
 <summary>Create Booking Page - Desktop</summary>
-<img src="">
+<img src="documentation/wireframes/create_booking_desktop.PNG">
 </details>
 <details>
 <summary>Create Booking Page - Mobile</summary>
-<img src="">
+<img src="documentation/wireframes/create_booking_mobile.PNG">
 </details>
 <details>
 <summary>Contact Page</summary>
-<img src="">
+<img src="documentation/wireframes/contact.PNG">
 </details>
 
 
