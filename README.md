@@ -880,21 +880,8 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-
-
-
-
-
-
-
-
-
+| Logout | Click logout from either navbar or footer. | I am asked if I really want to logout. | :heavy_check_mark: |
+| Logout confirmation | Click Logout on the confirmation question. | I am now logged out. | :heavy_check_mark: |
 
 
 ---
