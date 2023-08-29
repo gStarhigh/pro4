@@ -144,6 +144,31 @@ The flowchart was made using [Lucidchart](https://lucid.co/).
 
 
 #### Wireframes
+The Wireframes should not be considered finished result of the website, but as a tool I used to plan and visualize the project as I worked on it. 
+<details>
+<summary>Home Page - Not logged in</summary>
+<img src="">
+</details>
+<details>
+<summary>Home Page - Logged in</summary>
+<img src="">
+</details>
+<details>
+<summary>Home Page - Mobile</summary>
+<img src="">
+</details>
+<details>
+<summary>Create Booking Page - Desktop</summary>
+<img src="">
+</details>
+<details>
+<summary>Create Booking Page - Mobile</summary>
+<img src="">
+</details>
+<details>
+<summary>Contact Page</summary>
+<img src="">
+</details>
 
 
 #### Database
