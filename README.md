@@ -184,6 +184,26 @@ The project uses the PostgreSQL relational database for storing the data. It was
 The schema was made using [Lucidchart](https://lucid.co/).
 ![Schema:](/documentation/images/pro4_db_schema.PNG)
 
+The User Model is created using Django and allauth. 
+
+The Lesson Booking Model contains all data from the user when they book a lesson. Each user can book multiple lessons so each lesson has an unique booking_id(UUIDField). 
+
+Each booking has a lesson_date and a lesson_time. As each lessontime can have up to 3 no_participants, it's important to log and save that information.
+
+Level_ekipage is a set of pre-determind options for the user to choose from, to let the instructor know what to expect and prepare for.
+
+Fous_lesson is a text field, letting the user write what they want to focus on during their lesson.
+
+Created_on/Updated on are a datetimefields that are not subject to change by the user.
+
+Terms_checked is a booleanfield that checks if the user has accepted the terms of the booking or not.
+
+Booking_status is a Integerfield that is either a 1 or a 0 that determines the status of the booking made by the user. 
+
+- 0= Awaiting Approval.
+- 1= Confirmed. 
+
+
 ---
 ## General features
 
