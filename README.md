@@ -838,18 +838,27 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Fields | Watch the form. | No fields are pre-populated. | :heavy_check_mark: |
+| Submitting | Submit without all fields. | The form does not submit. | :heavy_check_mark: |
+| Cancel | Click Cancel button. | Resets form. | :heavy_check_mark: |
+| Send Email | Click send email. | Success message is displayed. | :heavy_check_mark: |
+| Send Email | Click send email. | I am taken to the Home page. | :heavy_check_mark: |
+| Send Email | Click send email. | The admin gets the email. | :heavy_check_mark: |
+| Send Email | Click send email. | The user gets a success email. | :heavy_check_mark: |
+
 
 - As a Logged in user:
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Fields | Watch the form. | Name and Email fields are pre-populated. | :heavy_check_mark: |
+| Fields | Change name or email. | Name and Email fields are read-only and cannot be changed. | :heavy_check_mark: |
+| Submitting | Submit without all fields. | The form does not submit. | :heavy_check_mark: |
+| Cancel | Click Cancel button. | Resets form. | :heavy_check_mark: |
+| Send Email | Click send email. | Success message is displayed. | :heavy_check_mark: |
+| Send Email | Click send email. | I am taken to the Home page. | :heavy_check_mark: |
+| Send Email | Click send email. | The admin gets the email. | :heavy_check_mark: |
+| Send Email | Click send email. | The user gets a success email. | :heavy_check_mark: |
 
 
 7. Login page.
