@@ -911,6 +911,19 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | Delete Lessons | Delete a specific lesson. | As Admin I am able to delete a specific lesson. | :heavy_check_mark: |
 | Delete Lessons | Delete all lessons. | As Admin I am able to delete a all lessons in the database. | :heavy_check_mark: |
 
+Images of the admin page:
+<details>
+<summary>Overview</summary>
+<img src="documentation/testing/admin/admin_dashboard.PNG">
+</details>
+<details>
+<summary>Lessons</summary>
+<img src="documentation/testing/admin/admin_lesson_overview.PNG">
+</details>
+<details>
+<summary>Users</summary>
+<img src="documentation/testing/admin/admin_user_overview.PNG">
+</details>
 
 ---
 ## Future improvements
