@@ -1251,6 +1251,10 @@ All images belong to us except the favicon.
 
 - Code institute for the walkthrough projects that taught me django to be able to complete this project.
 
+- W3Schools were a big help in learning and trouble shooting this project: https://www.w3schools.com/
+
+- Stackoverflow were a big help in learning and trouble shooting this project: https://stackoverflow.com/
+
 - Django Allauth docs: https://django-allauth.readthedocs.io/en/latest/configuration.html
 
 - EmailJS docs: https://www.emailjs.com/docs/sdk/send-form/
