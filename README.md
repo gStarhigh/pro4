@@ -819,6 +819,85 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
 | Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
 
+5. About page.
+
+- As a Logged out user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+- As a Logged in user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+
+6. Contact page.
+
+- As a Logged out user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+- As a Logged in user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+
+7. Login page.
+
+- As a Logged out user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+- As a Logged in user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+
+8. Logout page.
+
+- As a Logged out user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
+- As a Logged in user:
+
+| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
+|-------------|------------|---------------------|-------------------|
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+
 
 
 
