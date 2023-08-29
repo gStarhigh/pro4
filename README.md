@@ -820,23 +820,16 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 
 5. About page.
-
-- As a Logged out user:
-
-| **Feature** | **Action** | **Expected result** | **Pass/Fail** |
-|-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-
-- As a Logged in user:
+(This page is accessible regardless of login status.)
+- As a User:
 
 | **Feature** | **Action** | **Expected result** | **Pass/Fail** |
 |-------------|------------|---------------------|-------------------|
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
-| Placeholder | Placeholder | Placeholder | :heavy_check_mark: |
+| Contact Us link | Click the Contact us banner. | I am taken to the contact page. | :heavy_check_mark: |
+| YouTube Video | Scroll down to the video. | The video does not autoplay when the site loads.  | :heavy_check_mark: |
+| YouTube Video | Click play. | The video plays. | :heavy_check_mark: |
+| YouTube Video | Click "Watch on YouTube" | Youtube is opened in another tab with the correct video. | :heavy_check_mark: |
+| Google Maps | Scroll in on the Map. | The pin is in the correct place. | :heavy_check_mark: |
 
 
 6. Contact page.
