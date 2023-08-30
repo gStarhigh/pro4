@@ -545,6 +545,13 @@ A success message is also shown to the user when the form is valid and submitted
 --- 
 ## Testing
 
+Tested browsers:
+- Google Chrome: Everything works as expected.
+- Edge: Everything works as expected.
+- Firefox: EmailJS does not work on Firefox, the rest works as expected.
+
+All manual testing and tests of user Stories was made using Google Chrome.
+
 #### Lighthouse result
 The test was conducted on the Home page.
 
@@ -757,11 +764,6 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 
 ## Manual Testing
-
-Tested browsers:
-- Google Chrome: Everything works as expected.
-- Edge: Everything works as expected.
-- Firefox: EmailJS does not work on Firefox, the rest works as expected.
 
 1. Home Page
 
@@ -1009,7 +1011,7 @@ Images of the admin page:
 | On the Login page: To the right of "remember me" and to the left of the checkbox, there is a symbol which I cannot seem to remove.  | Unknown. I have tried all I could think of but could not get it to disappear. Perhaps usage of crispy forms would be an idea. | 
 | While testing I found that the terms checked button could be unchecked while updating the booking. | I solved this by adding a condition that checks whether or not the terms_checked checkbox is still checked, if not, presenting an error message. |
 | When you try submitting the booking lesson form with an invalid time and get an error, after that the reset button does not work. | No solution tested. |
-| EmailJS service does not work on Firefox. All bookings are made and saved to the server, however no email is being sent when using Firefox. | No solution tested. |
+| EmailJS service does not work on Firefox. This means that no emails are being sent, either from the bookings page or the contact page. | No solution tested. |
 
 ---
 ## Languages, Libraries and Software
