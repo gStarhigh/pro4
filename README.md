@@ -758,6 +758,11 @@ All User Stories can be found [Here](https://github.com/users/gStarhigh/projects
 
 ## Manual Testing
 
+Tested browsers:
+- Google Chrome: Everything works as expected.
+- Edge: Everything works as expected.
+- Firefox: EmailJS does not work on Firefox, the rest works as expected.
+
 1. Home Page
 
 - As a Logged out user:
