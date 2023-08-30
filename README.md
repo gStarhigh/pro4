@@ -1003,6 +1003,7 @@ Images of the admin page:
 | Error in console: "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'." | What I've understood this has something to do with Google's end. It has no affect on my site and everything works as it should. If i delete my iframe, the error disappears. I have found no solution to this, and as it does not affect the functionality, the iframe is left in the project. | 
 | On the Login page: To the right of "remember me" and to the left of the checkbox, there is a symbol which I cannot seem to remove.  | Unknown. I have tried all I could think of but could not get it to disappear. Perhaps usage of crispy forms would be an idea. | 
 | While testing I found that the terms checked button could be unchecked while updating the booking. | I solved this by adding a condition that checks whether or not the terms_checked checkbox is still checked, if not, presenting an error message. |
+| When you try submitting the booking lesson form with an invalid time and get an error, after that the reset button does not work. | No solution tested. |
 
 ---
 ## Languages, Libraries and Software
